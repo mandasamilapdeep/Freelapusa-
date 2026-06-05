@@ -1,0 +1,86 @@
+{% if collection.metafields.custom.what_can_you != blank
+  or collection.metafields.custom.what_can_you_content != blank
+%}
+  {% style %}
+    .what_can_you_main-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  {% endstyle %}
+  <div class="what_can_you_main what_can_you_main-{{ section.id }}">
+    <div class="container">
+      <div class="title_box">
+        {% if collection.metafields.custom.what_can_you != blank %}
+          <h2 class="built_titling h1">{{ collection.metafields.custom.what_can_you }}</h2>
+        {% endif %}
+      </div>
+      {% if collection.metafields.custom.what_can_you_content.value != blank %}
+        <div class="what_can_you_inner">
+          {% for what in collection.metafields.custom.what_can_you_content.value %}
+            <div class="what_can_you_single">
+              <div class="what_can_you_single_icon">
+                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="22.2879" cy="22.2879" r="22.2879" fill="#FFDE13"/>
+                  <path d="M13.0654 21.9038L19.5981 28.4364L31.8949 16.1396" stroke="black" stroke-width="3.0742" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="what_can_you_single_content">
+                {% if what.title != blank %}
+                  <h4>{{ what.title }}</h4>
+                {% endif %}
+                {% if what.text != blank %}
+                  <div class="">
+                    {{ what.text }}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+      {% if collection.metafields.custom.what_can_you_button != blank %}
+        <div class="btn_box">
+          <a href="{{ collection.metafields.custom.what_can_you_button.value.url }}" class="btn ">
+            {{- collection.metafields.custom.what_can_you_button.value.text -}}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "What can you",
+  "tag": "section",
+  "class": "what_can_you",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 50
+    }
+  ],
+  "presets": [
+    {
+      "name": "What can you"
+    }
+  ]
+}
+{% endschema %}

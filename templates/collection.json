@@ -9,39 +9,78 @@
  */
 {
   "sections": {
-    "rich_text_aGimpx": {
-      "type": "rich-text",
+    "collection_gallery_PMyBnC": {
+      "type": "collection-gallery",
       "blocks": {
-        "heading_iRhxDn": {
-          "type": "heading",
+        "media_xmw6Bt": {
+          "type": "media",
           "settings": {
-            "title": "What can you time with Freelap?",
-            "use_h1": false
+            "image": "{{ collection.metafields.custom.collection_image_with_text.value.first_image.value }}",
+            "enlarge_media": true,
+            "subheading": "",
+            "title": "{{ collection.metafields.custom.collection_image_with_text.value.title.value }}",
+            "description": "{{ collection.metafields.custom.collection_image_with_text.value.text.value }}",
+            "button_label": "{{ collection.metafields.custom.collection_image_with_text.value.first_button_title.value }}",
+            "link": "{{ collection.metafields.custom.collection_image_with_text.value.first_button_link.value }}",
+            "button_label_2": "{{ collection.metafields.custom.collection_image_with_text.value.second_button_title.value }}",
+            "link_2": "{{ collection.metafields.custom.collection_image_with_text.value.second_button_link.value }}",
+            "text_alignment": "center left"
           }
         },
-        "text_wN6eh8": {
-          "type": "text",
-          "disabled": true,
+        "media_BteiyT": {
+          "type": "media",
           "settings": {
-            "text": "",
-            "enlarge_text": true
+            "image": "{{ collection.metafields.custom.collection_image_with_text.value.second_image.value }}",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "button_label": "",
+            "link": "",
+            "button_label_2": "",
+            "link_2": "",
+            "text_alignment": "bottom left"
           }
         }
       },
       "block_order": [
-        "heading_iRhxDn",
-        "text_wN6eh8"
+        "media_xmw6Bt",
+        "media_BteiyT"
       ],
-      "custom_css": [
-        ".custom_rich_text {margin-bottom: 40px;}"
-      ],
-      "name": "Rich text",
+      "name": "Collection Gallery",
       "settings": {
-        "height": "medium",
-        "text_alignment": "center",
+        "grid_desktop": 2,
+        "grid_mobile": "1",
+        "height": "fixed",
+        "desktop_image_height": 520,
+        "mobile_image_height": 400,
+        "title_size": 66,
+        "title_size_mobile": 34,
+        "enable_margin": true,
+        "enable_row_spacing": true,
         "full_width": false,
-        "color_scheme": "default"
+        "color_scheme": "default",
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "overlay_padding": "standard",
+        "button_1_bg_color": "#ffde13",
+        "button_1_text_color": "#000000",
+        "button_1_border_color": "#ffde13",
+        "button_1_hover_bg_color": "rgba(0,0,0,0)",
+        "button_1_hover_text_color": "#ffffff",
+        "button_1_hover_border_color": "#ffffff",
+        "button_2_bg_color": "rgba(0,0,0,0)",
+        "button_2_text_color": "#ffffff",
+        "button_2_border_color": "#ffffff",
+        "button_2_hover_bg_color": "#ffde13",
+        "button_2_hover_text_color": "#000000",
+        "button_2_hover_border_color": "#ffde13"
       }
+    },
+    "what_can_you_emfEhr": {
+      "type": "what_can_you",
+      "name": "What can you",
+      "settings": {}
     },
     "custom_gallery_Vhb9LJ": {
       "type": "custom_gallery",
@@ -93,6 +132,7 @@
         "gallery_item_ijAHTY",
         "gallery_item_ic4Vhc"
       ],
+      "disabled": true,
       "name": "Custom Gallery",
       "settings": {
         "section_top_pading": 0,
@@ -160,6 +200,7 @@
         "heading_UctgbU",
         "text_ApaaTx"
       ],
+      "disabled": true,
       "custom_css": [
         ".custom_rich_text {margin-bottom: 40px;}"
       ],
@@ -243,6 +284,7 @@
         "feature_6bqgyP",
         "feature_6anbM4"
       ],
+      "disabled": true,
       "name": "Key features",
       "settings": {
         "height": "small",
@@ -299,6 +341,7 @@
         "question_Ydmjjh",
         "question_h3a7df"
       ],
+      "disabled": true,
       "name": "Collapsible tabs",
       "settings": {
         "title": "Answer Track & Field buying blockers",
@@ -308,7 +351,8 @@
     }
   },
   "order": [
-    "rich_text_aGimpx",
+    "collection_gallery_PMyBnC",
+    "what_can_you_emfEhr",
     "custom_gallery_Vhb9LJ",
     "main",
     "rich_text_9XytfM",
