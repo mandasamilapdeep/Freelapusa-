@@ -1,0 +1,242 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "e33df8e3-c667-49c7-9da7-a23fac96c44d": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "<a href=\"#\" title=\"FAQs\">Free shipping</a> on orders over $50",
+            "show_countdown": true,
+            "hide_on_end": false,
+            "end_date": "",
+            "end_time": "",
+            "number_font": "base",
+            "countdown_separator": "box",
+            "use_custom_colors": true,
+            "bg_color": "#232323",
+            "bg_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "ab92b476-2d4e-4c0c-991e-4f528236c2d9": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "New eco friendly arrivals. <a href=\"#\" title=\"New In\">Shop the capsule.</a>",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "",
+            "end_time": "",
+            "number_font": "base",
+            "countdown_separator": "box",
+            "use_custom_colors": false,
+            "bg_color": "#dd9a1a",
+            "bg_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "779702cf-d8cf-4f96-b433-b424480b158b": {
+          "type": "announcement",
+          "settings": {
+            "text": "Get 10% off your first order. Use Code: First10%",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "",
+            "end_time": "",
+            "number_font": "base",
+            "countdown_separator": "dash",
+            "use_custom_colors": false,
+            "bg_color": "#862714",
+            "bg_gradient": "",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "e33df8e3-c667-49c7-9da7-a23fac96c44d",
+        "ab92b476-2d4e-4c0c-991e-4f528236c2d9",
+        "779702cf-d8cf-4f96-b433-b424480b158b"
+      ],
+      "settings": {
+        "message_font_size": 15,
+        "announcement_bar_col": "#ffde13",
+        "announcement_bar_gradient": "",
+        "announcement_text_col": "#000000",
+        "show_social_icons": false,
+        "menu": "",
+        "enable_country_selector": true,
+        "enable_language_selector": true
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "menu_promotion_small_DtEBkY": {
+          "type": "menu-promotion-small",
+          "disabled": true,
+          "settings": {
+            "dropdown_link_title": "",
+            "title": "",
+            "link_url": ""
+          }
+        },
+        "menu_promotion_large_tdBDnf": {
+          "type": "menu-promotion-large",
+          "disabled": true,
+          "settings": {
+            "dropdown_link_title": "",
+            "enable_fade": false,
+            "image_position": "right",
+            "subheading": "Tell your story",
+            "title": "Wide menu promotion",
+            "text": "<p>Pair text with an image to give customers insight into your brand. Tell a story, explain a product detail, or describe a new promotion.</p>",
+            "button_1_label": "Shop this",
+            "button_1_link": "",
+            "button_1_style": "secondary",
+            "button_2_label": "Shop all",
+            "button_2_link": "",
+            "button_2_style": "primary",
+            "text_alignment": "center",
+            "show_countdown": false,
+            "countdown_position": "under-heading",
+            "end_date": "",
+            "end_time": "",
+            "end_text": "",
+            "hide_on_end": false,
+            "number_size": 40,
+            "number_font": "base",
+            "divider_type": "colon",
+            "show_timer_labels": true
+          }
+        }
+      },
+      "block_order": [
+        "menu_promotion_small_DtEBkY",
+        "menu_promotion_large_tdBDnf"
+      ],
+      "settings": {
+        "logo": "shopify://shop_images/image_1.png",
+        "logo_img_width_int": 200,
+        "mobile_logo_img_width_int": 135,
+        "show_social_icons": true,
+        "logo_h1": true,
+        "enable_sticky": true,
+        "enable_transparent": false,
+        "transparent_color": "#ffffff",
+        "transparent_fade": "#000000",
+        "transparent_fade_strength": 25,
+        "menu_linklist": "main-header-menu",
+        "menu_layout": "underneath",
+        "underneath_menu_bg_color": "#dbdbdb",
+        "nav_featured_link": "",
+        "enable_legacy_customer_account_link": false,
+        "customer_account_menu": "customer-account-main-menu",
+        "menu_linklist_mobile": "",
+        "mobile_expand_with_entire_link": true,
+        "enable_mobile_promo_carousel": false,
+        "enable_nav_mob_products": false,
+        "nav_mob_products_title": "",
+        "nav_mob_products_collection": "",
+        "enable_search": true,
+        "search_recommendations_title": "",
+        "search_recommendations_menu": "main-menu",
+        "icon_strategy": "icons_only",
+        "show_text_with_login_icon": true,
+        "cart_icon": "cart",
+        "button_text": "Get Quote",
+        "button_link": "#",
+        "icon_image": "shopify://shop_images/Group_206.svg",
+        "html": "<a href=\"tel:1888FREELAP\">1-888-FREELAP</a><br>\n<a href=\"mailto:sales@freelapusa.com\">sales@freelapusa.com</a>"
+      }
+    },
+    "store-messages": {
+      "type": "store-messages",
+      "blocks": {
+        "message_ey38Gx": {
+          "type": "message",
+          "settings": {
+            "heading": "Store message",
+            "subheading": "Add important information here",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "message_ey38Gx"
+      ],
+      "disabled": true,
+      "settings": {
+        "head_not_home_only": false,
+        "head_not_col_bg": "#f4f6f8",
+        "head_not_col_txt1": "#171717",
+        "head_not_col_txt2": "#4c4c4b",
+        "head_not_mob_show": false,
+        "head_not_mob_text": "Free shipping on orders over $50",
+        "head_not_mob_url": ""
+      }
+    },
+    "compact_messages_BAKQe3": {
+      "type": "compact-messages",
+      "blocks": {
+        "message_p6NpWR": {
+          "type": "message",
+          "settings": {
+            "heading": "Message",
+            "subheading": "Add important information here",
+            "link_url": ""
+          }
+        },
+        "message_UjPcUp": {
+          "type": "message",
+          "settings": {
+            "heading": "Message",
+            "subheading": "Add important information here",
+            "link_url": ""
+          }
+        },
+        "message_afYtQB": {
+          "type": "message",
+          "settings": {
+            "heading": "Message",
+            "subheading": "Add important information here",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "message_p6NpWR",
+        "message_UjPcUp",
+        "message_afYtQB"
+      ],
+      "disabled": true,
+      "name": "Store messages",
+      "settings": {
+        "head_not_col_bg": "#f4f6f8",
+        "head_not_col_txt1": "#171717",
+        "head_not_col_txt2": "#4c4c4b",
+        "head_not_mob_show": false,
+        "head_not_mob_text": "Add important information here",
+        "head_not_mob_url": ""
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "store-messages",
+    "compact_messages_BAKQe3"
+  ]
+}

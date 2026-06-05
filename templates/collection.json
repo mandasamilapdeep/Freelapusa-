@@ -1,0 +1,318 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_aGimpx": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iRhxDn": {
+          "type": "heading",
+          "settings": {
+            "title": "What can you time with Freelap?",
+            "use_h1": false
+          }
+        },
+        "text_wN6eh8": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_iRhxDn",
+        "text_wN6eh8"
+      ],
+      "custom_css": [
+        ".custom_rich_text {margin-bottom: 40px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "custom_gallery_Vhb9LJ": {
+      "type": "custom_gallery",
+      "blocks": {
+        "gallery_item_XwPxxj": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_e70b41a3-f71c-4e66-bb72-bcd2ab36b0aa.png",
+            "title": "",
+            "title_2": "Starts & Acceleration",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "gallery_item_hPVjVi": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_1.png",
+            "title": "",
+            "title_2": "Flying Sprints",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "gallery_item_ijAHTY": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_40b5ce79-02aa-4ef0-be2f-5d84afafcd89.png",
+            "title": "",
+            "title_2": "Splits & Reps",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "gallery_item_ic4Vhc": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_1b6e21b8-b01c-4b4b-8281-2017e3d75754.png",
+            "title": "",
+            "title_2": "Tempo & Laps",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "gallery_item_XwPxxj",
+        "gallery_item_hPVjVi",
+        "gallery_item_ijAHTY",
+        "gallery_item_ic4Vhc"
+      ],
+      "name": "Custom Gallery",
+      "settings": {
+        "section_top_pading": 0,
+        "section_bottom_pading": 50,
+        "desktop_block_height": 340,
+        "mobile_block_height": 340
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_title": false,
+        "show_image_behind_heading": false,
+        "heading_image_height": "medium",
+        "overlay_style": "shadow",
+        "coll_desc_pos": "above",
+        "coll_num_per_page_int": 24,
+        "grid": 4,
+        "show_vendor": false,
+        "show_total": false,
+        "enable_filtering": true,
+        "collapse_tag_sidebar_by_default": false,
+        "collapse_filters_method": "over-12",
+        "show_filter_counts": true,
+        "filter_two_columns": false,
+        "button_grid_filter_name": "Size,Taille,Größe",
+        "auto_apply_hide_unavailable": false,
+        "enable_sticky_filter": true,
+        "show_sort": true,
+        "sort_show_featured": false,
+        "sort_show_best": true,
+        "sort_show_alpha": true,
+        "sort_show_price": true,
+        "sort_show_date": true,
+        "related_collections": [],
+        "related_collections_style": "buttons",
+        "rel_coll_gall_aspect_ratio": "1",
+        "image_position": "center center",
+        "rel_coll_gall_enable_margin": true,
+        "rel_coll_gall_full_width": false,
+        "rel_coll_gall_overlay_style": "shadow",
+        "rel_coll_gall_text_alignment": "center center",
+        "rel_coll_grid_mobile": "2"
+      }
+    },
+    "rich_text_9XytfM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UctgbU": {
+          "type": "heading",
+          "settings": {
+            "title": "Set the timing points, run the rep, review the result.",
+            "use_h1": false
+          }
+        },
+        "text_ApaaTx": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_UctgbU",
+        "text_ApaaTx"
+      ],
+      "custom_css": [
+        ".custom_rich_text {margin-bottom: 40px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "key_features_wBKKwN": {
+      "type": "key-features",
+      "blocks": {
+        "feature_JgDbFV": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_66ed267a-8a1a-4627-96fe-b5a5304c549d.png",
+            "bg_color": "#fff9d5",
+            "bg_gradient": "",
+            "text_color": "#000000",
+            "heading": "Place start, split, or finishtransmitters",
+            "text": "<p>Set timing points for acceleration, flying sprints, splits,or repeat reps.</p>",
+            "show_segments": true,
+            "segments": 3,
+            "active_segment": "1",
+            "fill_segments": false,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_6bqgyP": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/image_42.png",
+            "bg_color": "#fff9d5",
+            "bg_gradient": "",
+            "text_color": "#000000",
+            "heading": "Athletes wear the timing chip",
+            "text": "<p>The chip identifies the athlete and records timing events through the session.</p>",
+            "show_segments": true,
+            "segments": 3,
+            "active_segment": "2",
+            "fill_segments": false,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_6anbM4": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/image_43.jpg",
+            "bg_color": "#fff9d5",
+            "bg_gradient": "",
+            "text_color": "#000000",
+            "heading": "Results flow into MyFreelap",
+            "text": "<p>Coaches and athletes can review times after each rep and compare progress.</p>",
+            "show_segments": true,
+            "segments": 3,
+            "active_segment": "3",
+            "fill_segments": false,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        }
+      },
+      "block_order": [
+        "feature_JgDbFV",
+        "feature_6bqgyP",
+        "feature_6anbM4"
+      ],
+      "name": "Key features",
+      "settings": {
+        "height": "small",
+        "heading": "",
+        "image_max_width": 650,
+        "media_aspect_ratio": "t",
+        "image_position": "left",
+        "segment_position": "under-title"
+      }
+    },
+    "collapsible_tabs_qqP9LR": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_ANFynM": {
+          "type": "question",
+          "settings": {
+            "title": "Can one athlete use Freelap alone?",
+            "answer": "<p>Answer</p>"
+          }
+        },
+        "question_3zVCQh": {
+          "type": "question",
+          "settings": {
+            "title": "Which sports can use Freelap?",
+            "answer": "<p>Answer</p>"
+          }
+        },
+        "question_GKLkBD": {
+          "type": "question",
+          "settings": {
+            "title": "Can schools request a quote?",
+            "answer": "<p>Answer</p>"
+          }
+        },
+        "question_Ydmjjh": {
+          "type": "question",
+          "settings": {
+            "title": "How does the Freelap system work?",
+            "answer": "<p>Answer</p>"
+          }
+        },
+        "question_h3a7df": {
+          "type": "question",
+          "settings": {
+            "title": "What can I time with Freelap?",
+            "answer": "<p>Answer</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_ANFynM",
+        "question_3zVCQh",
+        "question_GKLkBD",
+        "question_Ydmjjh",
+        "question_h3a7df"
+      ],
+      "name": "Collapsible tabs",
+      "settings": {
+        "title": "Answer Track & Field buying blockers",
+        "open_tab": false,
+        "enable_faq_schema": false
+      }
+    }
+  },
+  "order": [
+    "rich_text_aGimpx",
+    "custom_gallery_Vhb9LJ",
+    "main",
+    "rich_text_9XytfM",
+    "key_features_wBKKwN",
+    "collapsible_tabs_qqP9LR"
+  ]
+}

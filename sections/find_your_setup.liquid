@@ -1,0 +1,404 @@
+{% style %}
+#{{ section.id }} {
+  padding-top: {{ section.settings.section_top_pading }}px;
+  padding-bottom: {{ section.settings.section_bottom_pading }}px;
+}
+#{{ section.id }} .button_group_subtitle {
+   color: {{ section.settings.groups_title_color }};
+}
+#{{ section.id }} .find_btn {
+   background-color: {{ section.settings.groups_btn_bg_color }};
+   color: {{ section.settings.groups_btn_text_color }};
+   border: 1px solid {{ section.settings.groups_btn_border_color }}
+}
+#{{ section.id }} .find_btn:hover {
+   background-color: {{ section.settings.groups_active_btn_bg_color }};
+   color: {{ section.settings.groups_active_btn_text_color }};
+   border: 1px solid {{ section.settings.groups_active_btn_border_color }}
+}
+#{{ section.id }} .find_btn.active {
+   background-color: {{ section.settings.groups_active_btn_bg_color }};
+   color: {{ section.settings.groups_active_btn_text_color }};
+   border: 1px solid {{ section.settings.groups_active_btn_border_color }}
+}
+#{{ section.id }} .right_side {
+   color: {{ section.settings.content_color }};   
+}
+
+#{{ section.id }} .right_side .block_btn{
+   background-color: {{ section.settings.content_color }};  
+   color: {{ section.settings.content_bg_color }};
+   border: 1px solid {{ section.settings.content_color }}; 
+}
+#{{ section.id }} .right_side .block_btn:hover{
+   color: {{ section.settings.content_color }};  
+   background-color: {{ section.settings.content_bg_color }};
+   border: 1px solid {{ section.settings.content_color }}; 
+}
+
+@media(max-width:768px){
+  #{{ section.id }} {
+    padding-top: {{ section.settings.section_top_pading | times: 0.6  }}px;
+    padding-bottom: {{ section.settings.section_bottom_pading | times: 0.6  }}px;
+  }
+}
+
+{% endstyle %}
+<div id="{{ section.id }}" class="find_your_setup_main">
+    <div class="container find_your_setup">
+        {% if section.settings.title != blank %}
+        <div class="title_box">
+          <h2 class="h1 built_titling">{{ section.settings.title }}</h2>
+        </div>
+      {% endif %} 
+        <div class="find_your_setup_inner">
+            <div class="left_side" style="background-image: url('{{ section.settings.tab_side_bg_image | image_url: width: 1200 }}')">
+              <div class="left_side_inner">
+                <div class="button_group_box first">
+                  {% if section.settings.group_first_title != blank %}
+                    <h2 class="button_group_subtitle built_titling">
+                      {{ section.settings.group_first_title }}
+                    </h2>
+                  {% endif %}
+                  <div class="buttons_box">
+                    {% if section.settings.group_btn_first_1 != blank %}
+                    <span class="find_btn btn active">{{ section.settings.group_btn_first_1 }}</span>
+                    {% endif %}
+                    {% if section.settings.group_btn_first_2 != blank %}
+                    <span class="find_btn btn">{{ section.settings.group_btn_first_2 }}</span>
+                    {% endif %}
+                    {% if section.settings.group_btn_first_3 != blank %}
+                    <span class="find_btn btn">{{ section.settings.group_btn_first_3 }}</span>
+                    {% endif %}
+                    {% if section.settings.group_btn_first_4 != blank %}
+                    <span class="find_btn btn">{{ section.settings.group_btn_first_4 }}</span>
+                    {% endif %}
+                    {% if section.settings.group_btn_first_5 != blank %}
+                    <span class="find_btn btn">{{ section.settings.group_btn_first_5 }}</span>
+                    {% endif %}
+                    {% if section.settings.group_btn_first_6 != blank %}
+                    <span class="find_btn btn">{{ section.settings.group_btn_first_6 }}</span>
+                    {% endif %}
+                    {% if section.settings.group_btn_first_7 != blank %}
+                    <span class="find_btn btn">{{ section.settings.group_btn_first_7 }}</span>
+                    {% endif %}
+                    {% if section.settings.group_btn_first_8 != blank %}
+                    <span class="find_btn btn">{{ section.settings.group_btn_first_8 }}</span>
+                    {% endif %}
+                  </div>
+                </div>
+
+                <div class="button_group_box second">
+                  {% if section.settings.group_second_title != blank %}
+                    <h2 class="button_group_subtitle built_titling">
+                      {{ section.settings.group_second_title }}
+                    </h2>
+                  {% endif %}
+                  <div class="buttons_box">
+                    {% if section.settings.group_btn_second_1 != blank %}
+                    <span class="find_btn btn active">{{ section.settings.group_btn_second_1 }}</span>
+                    {% endif %}
+                    {% if section.settings.group_btn_second_2 != blank %}
+                    <span class="find_btn btn">{{ section.settings.group_btn_second_2 }}</span>
+                    {% endif %}
+                    {% if section.settings.group_btn_second_3 != blank %}
+                    <span class="find_btn btn">{{ section.settings.group_btn_second_3 }}</span>
+                    {% endif %}
+                    {% if section.settings.group_btn_second_4 != blank %}
+                    <span class="find_btn btn">{{ section.settings.group_btn_second_4 }}</span>
+                    {% endif %}
+                    {% if section.settings.group_btn_second_5 != blank %}
+                    <span class="find_btn btn">{{ section.settings.group_btn_second_5 }}</span>
+                    {% endif %}
+                    {% if section.settings.group_btn_second_6 != blank %}
+                    <span class="find_btn btn">{{ section.settings.group_btn_second_6 }}</span>
+                    {% endif %}
+                    {% if section.settings.group_btn_second_7 != blank %}
+                    <span class="find_btn btn">{{ section.settings.group_btn_second_7 }}</span>
+                    {% endif %}
+                    {% if section.settings.group_btn_second_8 != blank %}
+                    <span class="find_btn btn">{{ section.settings.group_btn_second_8 }}</span>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="right_side" style="background-color: {{ section.settings.content_bg_color }}">
+              {% for block in section.blocks %}
+                 <div combination="{{ block.settings.find_combination }}" {% if block.settings.hide_block %}style="display: none;"{% endif %} class="right_side_inner">
+                     {% if block.settings.text != blank %}
+                      <div class="block_text">{{ block.settings.text }}</div>
+                     {% endif %} 
+                     {% if block.settings.title != blank %}
+                     <h2 class="block_title built_titling">{{ block.settings.title }}</h2>
+                     {% endif %}
+                     {% if block.settings.richtext != blank %}
+                     <div class="block_rich_text">{{ block.settings.richtext }}</div>
+                     {% endif %}
+                     {% if block.settings.btn_text != blank %}
+                     <a href="{{ block.settings.btn_link }}" class="block_btn btn">{{ block.settings.btn_text }} <i class="fa-solid fa-arrow-right"></i></a>
+                     {% endif %}
+                 </div>
+              {% endfor %}  
+            </div>   
+        </div>
+    </div>
+    
+</div>
+
+{% schema %}
+{
+  "name": "Find your setup",
+  "tag": "section",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "range",
+      "id": "section_top_pading",
+      "label": "Section top padding",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 50,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_bottom_pading",
+      "label": "Section bottom padding",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 50,
+      "unit": "px"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "tab_side_bg_image",
+      "label": "Tab side background image"
+    },
+    {
+      "type": "header",
+      "content": "First button group"
+    },
+    {
+      "type": "text",
+      "id": "group_first_title",
+      "label": "Group first title"
+    },
+    {
+      "type": "text",
+      "id": "group_btn_first_1",
+      "label": "Button text 1"
+    },
+    {
+      "type": "text",
+      "id": "group_btn_first_2",
+      "label": "Button text 2"
+    },
+    {
+      "type": "text",
+      "id": "group_btn_first_3",
+      "label": "Button text 3"
+    },
+    {
+      "type": "text",
+      "id": "group_btn_first_4",
+      "label": "Button text 4"
+    },
+    {
+      "type": "text",
+      "id": "group_btn_first_5",
+      "label": "Button text 5"
+    },
+    {
+      "type": "text",
+      "id": "group_btn_first_6",
+      "label": "Button text 6"
+    },
+    {
+      "type": "text",
+      "id": "group_btn_first_7",
+      "label": "Button text 7"
+    },
+    {
+      "type": "text",
+      "id": "group_btn_first_8",
+      "label": "Button text 8"
+    },
+    {
+      "type": "header",
+      "content": "Second button group"
+    },
+    {
+      "type": "text",
+      "id": "group_second_title",
+      "label": "Group second title"
+    },
+    {
+      "type": "text",
+      "id": "group_btn_second_1",
+      "label": "Button text 1"
+    },
+    {
+      "type": "text",
+      "id": "group_btn_second_2",
+      "label": "Button text 2"
+    },
+    {
+      "type": "text",
+      "id": "group_btn_second_3",
+      "label": "Button text 3"
+    },
+    {
+      "type": "text",
+      "id": "group_btn_second_4",
+      "label": "Button text 4"
+    },
+    {
+      "type": "text",
+      "id": "group_btn_second_5",
+      "label": "Button text 5"
+    },
+    {
+      "type": "text",
+      "id": "group_btn_second_6",
+      "label": "Button text 6"
+    },
+    {
+      "type": "text",
+      "id": "group_btn_second_7",
+      "label": "Button text 7"
+    },
+    {
+      "type": "text",
+      "id": "group_btn_second_8",
+      "label": "Button text 8"
+    },
+    {
+      "type": "header",
+      "content": "Groups colors"
+    },
+     {
+      "type": "color",
+      "id": "groups_title_color",
+      "label": "Groups title color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "groups_btn_bg_color",
+      "label": "Groups button background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "groups_btn_text_color",
+      "label": "Groups button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "groups_btn_border_color",
+      "label": "Groups button border color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "groups_active_btn_bg_color",
+      "label": "Groups acive button background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "groups_active_btn_text_color",
+      "label": "Groups active button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "groups_active_btn_border_color",
+      "label": "Groups active button border color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "For content side"
+    },
+     {
+      "type": "color",
+      "id": "content_bg_color",
+      "label": "Content background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "content_color",
+      "label": "Content color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+     {
+       "name": "content",
+       "type": "content",
+       "settings": [
+          {
+           "type": "checkbox",
+           "id": "hide_block",
+           "label": "Hide block",
+           "default": false
+         }, 
+         {
+           "type": "text",
+           "id": "find_combination",
+           "label": "Find combination"
+         },
+         {
+           "type": "textarea",
+           "id": "text",
+           "label": "text"
+         },
+         {
+           "type": "text",
+           "id": "title",
+           "label": "Title"
+         },
+         {
+           "type": "richtext",
+           "id": "richtext",
+           "label": "Rich text"
+         },
+         {
+           "type": "text",
+           "id": "btn_text",
+           "label": "Button text"
+         },
+         {
+           "type": "url",
+           "id": "btn_link",
+           "label": "Button link"
+         }
+       ]
+     }
+  ],
+  "presets": [
+    {
+      "name": "Find your setup",
+      "blocks": [
+        {
+          "type": "content"
+        },
+        {
+          "type": "content"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

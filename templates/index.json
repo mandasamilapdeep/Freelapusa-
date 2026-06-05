@@ -1,0 +1,1502 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_yFaybj": {
+      "type": "slideshow",
+      "blocks": {
+        "image_hxX6UJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Hero_Banner.png",
+            "slide_link": "",
+            "subheading": "Wireless timing systems",
+            "title": "WIRELESS TIMING FOR EVERY SPEED ENVIRONMENT.",
+            "heading_max_width": 9,
+            "title_size": 64,
+            "title_size_mobile": 34,
+            "use_h1": false,
+            "text": "<p>Freelap helps athletes, coaches, and teams capture accurate sprint , split, lap, and segment times without hand timing or bulky gates.</p>",
+            "enlarge_text": false,
+            "button_label_1": "Shop Now",
+            "button_url_1": "shopify://collections/freelap-accessories",
+            "button_label_2": "Get  Quote",
+            "button_url_2": "",
+            "text_alignment": "center left"
+          }
+        },
+        "image_DDUQhd": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "slide_link": "",
+            "subheading": "that feel good fit",
+            "title": "Iconic style, maximum heat.",
+            "heading_max_width": 8,
+            "title_size": 60,
+            "title_size_mobile": 40,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": false,
+            "button_label_1": "Shop Swimwear",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center left"
+          }
+        },
+        "image_9Wyhwe": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "slide_link": "",
+            "subheading": "just landed",
+            "title": "Blending beauty with purpose.",
+            "heading_max_width": 8,
+            "title_size": 60,
+            "title_size_mobile": 40,
+            "use_h1": false,
+            "text": "<p>Be the first to shop the drop</p>",
+            "enlarge_text": false,
+            "button_label_1": "Shop tops",
+            "button_url_1": "",
+            "button_label_2": "Shop bottoms",
+            "button_url_2": "",
+            "text_alignment": "center left"
+          }
+        }
+      },
+      "block_order": [
+        "image_hxX6UJ",
+        "image_DDUQhd",
+        "image_9Wyhwe"
+      ],
+      "settings": {
+        "add_class": "home_page_top_banner",
+        "height": "adapt",
+        "height_desktop": 960,
+        "height_mobile": 600,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "transition": "slide-fade",
+        "navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 6,
+        "accessibility_info": "",
+        "button_1_bg_color": "#ffde13",
+        "button_1_text_color": "#000000",
+        "button_1_border_color": "#ffde13",
+        "button_1_hover_bg_color": "rgba(0,0,0,0)",
+        "button_1_hover_text_color": "#ffffff",
+        "button_1_hover_border_color": "#ffffff",
+        "button_2_bg_color": "rgba(0,0,0,0)",
+        "button_2_text_color": "#ffffff",
+        "button_2_border_color": "#ffffff",
+        "button_2_hover_bg_color": "#ffde13",
+        "button_2_hover_text_color": "#000000",
+        "button_2_hover_border_color": "#ffde13"
+      }
+    },
+    "16117511238528a364": {
+      "type": "testimonials",
+      "blocks": {
+        "16117511238528a364-0": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "We are using Freelap to time sprint to first hurdleusing 7 and 8 steps to see which is fastest. Weare pleased with what we have done to date.",
+            "author": "Brooks Johnson / US Olympic T&F Coach",
+            "image": "shopify://shop_images/Mask_group.png",
+            "image_caption": "",
+            "link": ""
+          }
+        },
+        "testimonial_rzNKCa": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "We are using Freelap to time sprint to first hurdleusing 7 and 8 steps to see which is fastest. Weare pleased with what we have done to date.",
+            "author": "Brooks Johnson / US Olympic T&F Coach",
+            "image": "shopify://shop_images/Mask_group.png",
+            "image_caption": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16117511238528a364-0",
+        "testimonial_rzNKCa"
+      ],
+      "settings": {
+        "title": "",
+        "layout": "image-right",
+        "text_caps": false,
+        "quote_text_size": 25,
+        "quote_text_size_mobile": 16,
+        "image_shape": "square",
+        "color_scheme": "default",
+        "use_custom_star_rating_color": false,
+        "star_rating_color": "#bf570a",
+        "autoplay": true,
+        "autoplay_speed": 6
+      }
+    },
+    "custom_text_blocks_xzLtgT": {
+      "type": "custom_text_blocks",
+      "blocks": {
+        "text_block_P86VWr": {
+          "type": "text_block",
+          "settings": {
+            "small_heading": "STOPWATCH",
+            "title": "FAST BUT<br> INCONSISTENT",
+            "description": "Human reaction time limits trust in small improvements."
+          }
+        },
+        "text_block_pjwbHV": {
+          "type": "text_block",
+          "settings": {
+            "small_heading": "TIMING GATES",
+            "title": "ACCURATE BUT<br> BULKY",
+            "description": "Tripods and alignment slow down field\nsessions."
+          }
+        },
+        "text_block_QNhUby": {
+          "type": "text_block",
+          "settings": {
+            "small_heading": "FREELAP",
+            "title": "WIRELESS <br>\nAND PORTABLE",
+            "description": "Automated timing with field-ready setup."
+          }
+        }
+      },
+      "block_order": [
+        "text_block_P86VWr",
+        "text_block_pjwbHV",
+        "text_block_QNhUby"
+      ],
+      "name": "Custom text blocks",
+      "settings": {
+        "heading": "ACCURATE TIMING MADE EASY",
+        "bg_color": "rgba(0,0,0,0)"
+      }
+    },
+    "rich_text_miGXW8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6rmqdL": {
+          "type": "heading",
+          "settings": {
+            "title": "Freelap timing in your sport",
+            "use_h1": false
+          }
+        },
+        "text_fWykA4": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_6rmqdL",
+        "text_fWykA4"
+      ],
+      "custom_css": [
+        ".custom_rich_text {margin-bottom: 40px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "1619015739944f86f6": {
+      "type": "gallery",
+      "blocks": {
+        "1619015739944f86f6-1": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/image_7.png",
+            "enlarge_media": true,
+            "subheading": "",
+            "title": "Track & Field",
+            "button_label": "Explore Track Timing",
+            "link": "",
+            "text_alignment": "bottom center"
+          }
+        },
+        "1619015739944f86f6-2": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_1.png",
+            "enlarge_media": true,
+            "subheading": "",
+            "title": "Football",
+            "button_label": "Explore Football Timing",
+            "link": "",
+            "text_alignment": "bottom center"
+          }
+        },
+        "1619015739944f86f6-0": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_40b5ce79-02aa-4ef0-be2f-5d84afafcd89.png",
+            "enlarge_media": true,
+            "subheading": "",
+            "title": "Soccer",
+            "button_label": "Explore Soccer Timing",
+            "link": "",
+            "text_alignment": "bottom center"
+          }
+        },
+        "07a9021d-3e67-4f2a-a7dd-84903c7fe860": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_1b6e21b8-b01c-4b4b-8281-2017e3d75754.png",
+            "enlarge_media": true,
+            "subheading": "",
+            "title": "Cycling",
+            "button_label": "Explore Cycling Timing",
+            "link": "",
+            "text_alignment": "bottom center"
+          }
+        },
+        "media_pbf7tD": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_1.png",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "Football",
+            "button_label": "Explore Football Timing",
+            "link": "",
+            "text_alignment": "bottom center"
+          }
+        }
+      },
+      "block_order": [
+        "1619015739944f86f6-1",
+        "1619015739944f86f6-2",
+        "1619015739944f86f6-0",
+        "07a9021d-3e67-4f2a-a7dd-84903c7fe860",
+        "media_pbf7tD"
+      ],
+      "disabled": true,
+      "settings": {
+        "grid_desktop": 4,
+        "grid_mobile": "1",
+        "height": "fixed",
+        "desktop_image_height": 560,
+        "mobile_image_height": 480,
+        "title_size": 28,
+        "title_size_mobile": 34,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "color_scheme": "default",
+        "enable_carousel": false,
+        "overlay_style": "shadow",
+        "overlay_padding": "large",
+        "button_style": "secondary"
+      }
+    },
+    "custom_gallery_NTXeGw": {
+      "type": "custom_gallery",
+      "blocks": {
+        "gallery_item_mKBwYn": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/image_7_8a44a450-466e-47d0-909e-b5742cbf1f00.png",
+            "title": "Track & Field",
+            "title_2": "",
+            "button_text": "Explore Track Timing",
+            "button_link": "#"
+          }
+        },
+        "gallery_item_hLDtkp": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_1.png",
+            "title": "Football",
+            "title_2": "",
+            "button_text": "Explore Football Timing",
+            "button_link": "#"
+          }
+        },
+        "gallery_item_cYHeDF": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_40b5ce79-02aa-4ef0-be2f-5d84afafcd89.png",
+            "title": "Soccer",
+            "title_2": "",
+            "button_text": "Explore Soccer Timing",
+            "button_link": ""
+          }
+        },
+        "gallery_item_VKNhdy": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_1b6e21b8-b01c-4b4b-8281-2017e3d75754.png",
+            "title": "Cycling",
+            "title_2": "",
+            "button_text": "Explore Cycling Timing",
+            "button_link": "#"
+          }
+        },
+        "gallery_item_izaTg7": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/image_7_8a44a450-466e-47d0-909e-b5742cbf1f00.png",
+            "title": "Track & Field",
+            "title_2": "",
+            "button_text": "Explore",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "gallery_item_mKBwYn",
+        "gallery_item_hLDtkp",
+        "gallery_item_cYHeDF",
+        "gallery_item_VKNhdy",
+        "gallery_item_izaTg7"
+      ],
+      "name": "Custom Gallery",
+      "settings": {
+        "section_top_pading": 0,
+        "section_bottom_pading": 0,
+        "desktop_block_height": 480,
+        "mobile_block_height": 440
+      }
+    },
+    "rich_text_GbNgfW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WkNxQD": {
+          "type": "heading",
+          "settings": {
+            "title": "How Freelap works",
+            "use_h1": false
+          }
+        },
+        "text_zqzjPK": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_WkNxQD",
+        "text_zqzjPK"
+      ],
+      "custom_css": [
+        ".custom_rich_text {margin-bottom: 40px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "key_features_XcYhWj": {
+      "type": "key-features",
+      "blocks": {
+        "feature_JWw8y3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_66ed267a-8a1a-4627-96fe-b5a5304c549d.png",
+            "bg_color": "#fff9d5",
+            "bg_gradient": "",
+            "text_color": "#000000",
+            "heading": "Wear the chip",
+            "text": "<p>Athletes wear the timing chip during training toaccurately track their speed, distance, lap time, andoverall performance. The chip helps coaches andathletes analyze real-time data, improve trainingefficiency, monitor progress, and enhance performanceduring practice sessions and competitive preparation.</p>",
+            "show_segments": true,
+            "segments": 3,
+            "active_segment": "1",
+            "fill_segments": false,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_7kU6tw": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/image_42.png",
+            "bg_color": "#fff9d5",
+            "bg_gradient": "",
+            "text_color": "#000000",
+            "heading": "Place transmitters",
+            "text": "<p>Set start, split, lap, and finish points to track athleteperformance accurately during training and races.The system records each checkpoint in real time forbetter timing and performance analysis.</p>",
+            "show_segments": true,
+            "segments": 3,
+            "active_segment": "2",
+            "fill_segments": false,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_LCkczj": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/image_43.jpg",
+            "bg_color": "#fff9d5",
+            "bg_gradient": "",
+            "text_color": "#000000",
+            "heading": "Review results",
+            "text": "<p>Times appear instantly in the MyFreelap app, allowingathletes and coaches to review lap times, splits, andoverall performance in real time. The app helps trackprogress.</p>",
+            "show_segments": true,
+            "segments": 3,
+            "active_segment": "3",
+            "fill_segments": false,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        }
+      },
+      "block_order": [
+        "feature_JWw8y3",
+        "feature_7kU6tw",
+        "feature_LCkczj"
+      ],
+      "name": "Key features",
+      "settings": {
+        "height": "small",
+        "heading": "",
+        "image_max_width": 650,
+        "media_aspect_ratio": "t",
+        "image_position": "left",
+        "segment_position": "under-title"
+      }
+    },
+    "find_your_setup_PtayM4": {
+      "type": "find_your_setup",
+      "blocks": {
+        "content_DnL38N": {
+          "type": "content",
+          "settings": {
+            "hide_block": false,
+            "find_combination": "Track & Field Solo",
+            "text": "RECOMMENDED FOR TRACK SOLO TRAINING",
+            "title": "Freelap Timing BT112",
+            "richtext": "<p>A compact athlete and trainer setup for timing 1-4 athletes with instant mobile results and room to add chips later.</p><ul><li>Best for flying sprints, acceleration work, and repeat timing</li><li>Solo-friendly setup with no assistant required</li><li>Expandable as your group grows</li></ul>",
+            "btn_text": "VIEW RECOMMENDED PRODUCTS",
+            "btn_link": "#"
+          }
+        },
+        "content_mHrbUG": {
+          "type": "content",
+          "settings": {
+            "hide_block": true,
+            "find_combination": "Track & Field Trainer",
+            "text": "RECOMMENDED FOR TRACK TRAINER TRAINING",
+            "title": "Freelap Timing BT112",
+            "richtext": "<p>A compact athlete and trainer setup for timing 1-4 athletes with instant mobile results and room to add chips later.</p><ul><li>Best for flying sprints, acceleration work, and repeat timing</li><li>Solo-friendly setup with no assistant required</li><li>Expandable as your group grows</li></ul>",
+            "btn_text": "VIEW RECOMMENDED PRODUCTS",
+            "btn_link": "#"
+          }
+        },
+        "content_CTwLcw": {
+          "type": "content",
+          "settings": {
+            "hide_block": true,
+            "find_combination": "Track & Field Team",
+            "text": "RECOMMENDED FOR TRACK TEAM TRAINING",
+            "title": "Freelap Timing BT112",
+            "richtext": "<p>A compact athlete and trainer setup for timing 1-4 athletes with instant mobile results and room to add chips later.</p><ul><li>Best for flying sprints, acceleration work, and repeat timing</li><li>Solo-friendly setup with no assistant required</li><li>Expandable as your group grows</li></ul>",
+            "btn_text": "VIEW RECOMMENDED PRODUCTS",
+            "btn_link": "#"
+          }
+        },
+        "content_FjfUrr": {
+          "type": "content",
+          "settings": {
+            "hide_block": true,
+            "find_combination": "Football Solo",
+            "text": "RECOMMENDED FOR FOOTBALL SOLO TRAINING",
+            "title": "Freelap Timing BT112",
+            "richtext": "<p>A compact athlete and trainer setup for timing 1-4 athletes with instant mobile results and room to add chips later.</p><ul><li>Best for flying sprints, acceleration work, and repeat timing</li><li>Solo-friendly setup with no assistant required</li><li>Expandable as your group grows</li></ul>",
+            "btn_text": "VIEW RECOMMENDED PRODUCTS",
+            "btn_link": "#"
+          }
+        },
+        "content_MwUp87": {
+          "type": "content",
+          "settings": {
+            "hide_block": true,
+            "find_combination": "Football Trainer",
+            "text": "RECOMMENDED FOR FOOTBALL TRAINER TRAINING",
+            "title": "Freelap Timing BT112",
+            "richtext": "<p>A compact athlete and trainer setup for timing 1-4 athletes with instant mobile results and room to add chips later.</p><ul><li>Best for flying sprints, acceleration work, and repeat timing</li><li>Solo-friendly setup with no assistant required</li><li>Expandable as your group grows</li></ul>",
+            "btn_text": "VIEW RECOMMENDED PRODUCTS",
+            "btn_link": "#"
+          }
+        },
+        "content_VbRFD9": {
+          "type": "content",
+          "settings": {
+            "hide_block": true,
+            "find_combination": "Football Team",
+            "text": "RECOMMENDED FOR FOOTBALL TEAM TRAINING",
+            "title": "Freelap Timing BT112",
+            "richtext": "<p>A compact athlete and trainer setup for timing 1-4 athletes with instant mobile results and room to add chips later.</p><ul><li>Best for flying sprints, acceleration work, and repeat timing</li><li>Solo-friendly setup with no assistant required</li><li>Expandable as your group grows</li></ul>",
+            "btn_text": "VIEW RECOMMENDED PRODUCTS",
+            "btn_link": "#"
+          }
+        },
+        "content_ETQfyT": {
+          "type": "content",
+          "settings": {
+            "hide_block": true,
+            "find_combination": "Soccer Solo",
+            "text": "RECOMMENDED FOR SCOCCER SOLO TRAINING",
+            "title": "Freelap Timing BT112",
+            "richtext": "<p>A compact athlete and trainer setup for timing 1-4 athletes with instant mobile results and room to add chips later.</p><ul><li>Best for flying sprints, acceleration work, and repeat timing</li><li>Solo-friendly setup with no assistant required</li><li>Expandable as your group grows</li></ul>",
+            "btn_text": "VIEW RECOMMENDED PRODUCTS",
+            "btn_link": "#"
+          }
+        },
+        "content_VBETyJ": {
+          "type": "content",
+          "settings": {
+            "hide_block": true,
+            "find_combination": "Soccer Trainer",
+            "text": "RECOMMENDED FOR SCOCCER TRAINER TRAINING",
+            "title": "Freelap Timing BT112",
+            "richtext": "<p>A compact athlete and trainer setup for timing 1-4 athletes with instant mobile results and room to add chips later.</p><ul><li>Best for flying sprints, acceleration work, and repeat timing</li><li>Solo-friendly setup with no assistant required</li><li>Expandable as your group grows</li></ul>",
+            "btn_text": "VIEW RECOMMENDED PRODUCTS",
+            "btn_link": "#"
+          }
+        },
+        "content_3mdAx3": {
+          "type": "content",
+          "settings": {
+            "hide_block": true,
+            "find_combination": "Soccer Team",
+            "text": "RECOMMENDED FOR SCOCCER TEAM TRAINING",
+            "title": "Freelap Timing BT112",
+            "richtext": "<p>A compact athlete and trainer setup for timing 1-4 athletes with instant mobile results and room to add chips later.</p><ul><li>Best for flying sprints, acceleration work, and repeat timing</li><li>Solo-friendly setup with no assistant required</li><li>Expandable as your group grows</li></ul>",
+            "btn_text": "VIEW RECOMMENDED PRODUCTS",
+            "btn_link": "#"
+          }
+        },
+        "content_AHCbmA": {
+          "type": "content",
+          "settings": {
+            "hide_block": true,
+            "find_combination": "Motocross Solo",
+            "text": "RECOMMENDED FOR MOTOCROSS SOLO TRAINING",
+            "title": "Freelap Timing BT112",
+            "richtext": "<p>A compact athlete and trainer setup for timing 1-4 athletes with instant mobile results and room to add chips later.</p><ul><li>Best for flying sprints, acceleration work, and repeat timing</li><li>Solo-friendly setup with no assistant required</li><li>Expandable as your group grows</li></ul>",
+            "btn_text": "VIEW RECOMMENDED PRODUCTS",
+            "btn_link": "#"
+          }
+        },
+        "content_iteP3y": {
+          "type": "content",
+          "settings": {
+            "hide_block": true,
+            "find_combination": "Motocross Trainer",
+            "text": "RECOMMENDED FOR MOTOCROSS TRAINER TRAINING",
+            "title": "Freelap Timing BT112",
+            "richtext": "<p>A compact athlete and trainer setup for timing 1-4 athletes with instant mobile results and room to add chips later.</p><ul><li>Best for flying sprints, acceleration work, and repeat timing</li><li>Solo-friendly setup with no assistant required</li><li>Expandable as your group grows</li></ul>",
+            "btn_text": "VIEW RECOMMENDED PRODUCTS",
+            "btn_link": "#"
+          }
+        },
+        "content_LXwLza": {
+          "type": "content",
+          "settings": {
+            "hide_block": true,
+            "find_combination": "Motocross Team",
+            "text": "RECOMMENDED FOR MOTOCROSS TEAM TRAINING",
+            "title": "Freelap Timing BT112",
+            "richtext": "<p>A compact athlete and trainer setup for timing 1-4 athletes with instant mobile results and room to add chips later.</p><ul><li>Best for flying sprints, acceleration work, and repeat timing</li><li>Solo-friendly setup with no assistant required</li><li>Expandable as your group grows</li></ul>",
+            "btn_text": "VIEW RECOMMENDED PRODUCTS",
+            "btn_link": "#"
+          }
+        },
+        "content_e98nTR": {
+          "type": "content",
+          "settings": {
+            "hide_block": true,
+            "find_combination": "Cycling Solo",
+            "text": "RECOMMENDED FOR CYCLING SOLO TRAINING",
+            "title": "Freelap Timing BT112",
+            "richtext": "<p>A compact athlete and trainer setup for timing 1-4 athletes with instant mobile results and room to add chips later.</p><ul><li>Best for flying sprints, acceleration work, and repeat timing</li><li>Solo-friendly setup with no assistant required</li><li>Expandable as your group grows</li></ul>",
+            "btn_text": "VIEW RECOMMENDED PRODUCTS",
+            "btn_link": "#"
+          }
+        },
+        "content_rUEKNq": {
+          "type": "content",
+          "settings": {
+            "hide_block": true,
+            "find_combination": "Cycling Trainer",
+            "text": "RECOMMENDED FOR CYCLING TRAINER TRAINING",
+            "title": "Freelap Timing BT112",
+            "richtext": "<p>A compact athlete and trainer setup for timing 1-4 athletes with instant mobile results and room to add chips later.</p><ul><li>Best for flying sprints, acceleration work, and repeat timing</li><li>Solo-friendly setup with no assistant required</li><li>Expandable as your group grows</li></ul>",
+            "btn_text": "VIEW RECOMMENDED PRODUCTS",
+            "btn_link": "#"
+          }
+        },
+        "content_WhBgee": {
+          "type": "content",
+          "settings": {
+            "hide_block": true,
+            "find_combination": "Cycling Team",
+            "text": "RECOMMENDED FOR CYCLING TEAM TRAINING",
+            "title": "Freelap Timing BT112",
+            "richtext": "<p>A compact athlete and trainer setup for timing 1-4 athletes with instant mobile results and room to add chips later.</p><ul><li>Best for flying sprints, acceleration work, and repeat timing</li><li>Solo-friendly setup with no assistant required</li><li>Expandable as your group grows</li></ul>",
+            "btn_text": "VIEW RECOMMENDED PRODUCTS",
+            "btn_link": "#"
+          }
+        },
+        "content_9Cfbwh": {
+          "type": "content",
+          "settings": {
+            "hide_block": true,
+            "find_combination": "Skating Solo",
+            "text": "RECOMMENDED FOR SKATING SOLO TRAINING",
+            "title": "Freelap Timing BT112",
+            "richtext": "<p>A compact athlete and trainer setup for timing 1-4 athletes with instant mobile results and room to add chips later.</p><ul><li>Best for flying sprints, acceleration work, and repeat timing</li><li>Solo-friendly setup with no assistant required</li><li>Expandable as your group grows</li></ul>",
+            "btn_text": "VIEW RECOMMENDED PRODUCTS",
+            "btn_link": "#"
+          }
+        },
+        "content_Ri7hy8": {
+          "type": "content",
+          "settings": {
+            "hide_block": true,
+            "find_combination": "Skating Trainer",
+            "text": "RECOMMENDED FOR SKATING TRAINER TRAINING",
+            "title": "Freelap Timing BT112",
+            "richtext": "<p>A compact athlete and trainer setup for timing 1-4 athletes with instant mobile results and room to add chips later.</p><ul><li>Best for flying sprints, acceleration work, and repeat timing</li><li>Solo-friendly setup with no assistant required</li><li>Expandable as your group grows</li></ul>",
+            "btn_text": "VIEW RECOMMENDED PRODUCTS",
+            "btn_link": "#"
+          }
+        },
+        "content_KRUPey": {
+          "type": "content",
+          "settings": {
+            "hide_block": true,
+            "find_combination": "Skating Team",
+            "text": "RECOMMENDED FOR SKATING TEAM TRAINING",
+            "title": "Freelap Timing BT112",
+            "richtext": "<p>A compact athlete and trainer setup for timing 1-4 athletes with instant mobile results and room to add chips later.</p><ul><li>Best for flying sprints, acceleration work, and repeat timing</li><li>Solo-friendly setup with no assistant required</li><li>Expandable as your group grows</li></ul>",
+            "btn_text": "VIEW RECOMMENDED PRODUCTS",
+            "btn_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "content_DnL38N",
+        "content_mHrbUG",
+        "content_CTwLcw",
+        "content_FjfUrr",
+        "content_MwUp87",
+        "content_VbRFD9",
+        "content_ETQfyT",
+        "content_VBETyJ",
+        "content_3mdAx3",
+        "content_AHCbmA",
+        "content_iteP3y",
+        "content_LXwLza",
+        "content_e98nTR",
+        "content_rUEKNq",
+        "content_WhBgee",
+        "content_9Cfbwh",
+        "content_Ri7hy8",
+        "content_KRUPey"
+      ],
+      "name": "Find your setup",
+      "settings": {
+        "section_top_pading": 80,
+        "section_bottom_pading": 0,
+        "title": "Find your setup",
+        "tab_side_bg_image": "shopify://shop_images/Mask_group_1b002fbb-f6c3-4fcf-88bc-432c8bc76eb1.png",
+        "group_first_title": "Sport",
+        "group_btn_first_1": "Track & Field",
+        "group_btn_first_2": "Football",
+        "group_btn_first_3": "Soccer",
+        "group_btn_first_4": "Motocross",
+        "group_btn_first_5": "Cycling",
+        "group_btn_first_6": "Skating",
+        "group_btn_first_7": "",
+        "group_btn_first_8": "",
+        "group_second_title": "Training size",
+        "group_btn_second_1": "Solo",
+        "group_btn_second_2": "Trainer",
+        "group_btn_second_3": "Team",
+        "group_btn_second_4": "",
+        "group_btn_second_5": "",
+        "group_btn_second_6": "",
+        "group_btn_second_7": "",
+        "group_btn_second_8": "",
+        "groups_title_color": "#ffffff",
+        "groups_btn_bg_color": "rgba(0,0,0,0)",
+        "groups_btn_text_color": "#ffffff",
+        "groups_btn_border_color": "#ffffff",
+        "groups_active_btn_bg_color": "#ffde13",
+        "groups_active_btn_text_color": "#000000",
+        "groups_active_btn_border_color": "#ffde13",
+        "content_bg_color": "#ffde13",
+        "content_color": "#000000"
+      }
+    },
+    "collapsible_tabs_9nL4LJ": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_8J4Jrm": {
+          "type": "question",
+          "settings": {
+            "title": "Can one athlete use Freelap alone?",
+            "answer": "<p>Answer</p>"
+          }
+        },
+        "question_zUfj7G": {
+          "type": "question",
+          "settings": {
+            "title": "Which sports can use Freelap?",
+            "answer": "<p>Answer</p>"
+          }
+        },
+        "question_zKErmb": {
+          "type": "question",
+          "settings": {
+            "title": "Can schools request a quote?",
+            "answer": "<p>Answer</p>"
+          }
+        },
+        "question_mmTUTy": {
+          "type": "question",
+          "settings": {
+            "title": "How does the Freelap system work?",
+            "answer": "<p>Answer</p>"
+          }
+        },
+        "question_WWFwYA": {
+          "type": "question",
+          "settings": {
+            "title": "What can I time with Freelap?",
+            "answer": "<p>Answer</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_8J4Jrm",
+        "question_zUfj7G",
+        "question_zKErmb",
+        "question_mmTUTy",
+        "question_WWFwYA"
+      ],
+      "name": "Collapsible tabs",
+      "settings": {
+        "title": "FAQ / SUPPORT",
+        "open_tab": false,
+        "enable_faq_schema": false
+      }
+    },
+    "1617293273c37b524b": {
+      "type": "rich-text",
+      "blocks": {
+        "74d4f957-8922-4307-ac16-bee3d887612a": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "CHANTILLY SWIMWEAR"
+          }
+        },
+        "ab9dbf1f-cae8-4488-835a-1d27be252dfe": {
+          "type": "heading",
+          "settings": {
+            "title": "“We believe in two things: the pursuit of quality in all we do, and looking after one another. Everything else should just take care of itself.”",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "74d4f957-8922-4307-ac16-bee3d887612a",
+        "ab9dbf1f-cae8-4488-835a-1d27be252dfe"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "custom_content_pkGWkD": {
+      "type": "custom-content",
+      "blocks": {
+        "text_9NbUnc": {
+          "type": "text",
+          "settings": {
+            "width": "third",
+            "text_alignment": "left",
+            "center_on_mobile": true,
+            "icon": "",
+            "icon_color": "rgba(0,0,0,0)",
+            "subheading": "",
+            "title": "<strong>FLASH SALE</strong> : UP TO 40% OFF!",
+            "title_size": 24,
+            "title_size_mobile": 24,
+            "text": "",
+            "button_label": "",
+            "button_link": "#",
+            "button_style": "secondary"
+          }
+        },
+        "countdown_fRAMXk": {
+          "type": "countdown",
+          "settings": {
+            "width": "third",
+            "end_date": "",
+            "end_time": "",
+            "end_text": "",
+            "hide_on_end": false,
+            "number_size": 28,
+            "number_font": "heading",
+            "divider_type": "colon",
+            "show_timer_labels": true
+          }
+        },
+        "text_db3XfD": {
+          "type": "text",
+          "settings": {
+            "width": "third",
+            "text_alignment": "center",
+            "center_on_mobile": true,
+            "icon": "",
+            "icon_color": "rgba(0,0,0,0)",
+            "subheading": "",
+            "title": "",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "text": "",
+            "button_label": "SHOP CLEARANCE",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "text_9NbUnc",
+        "countdown_fRAMXk",
+        "text_db3XfD"
+      ],
+      "disabled": true,
+      "name": "Custom content",
+      "settings": {
+        "spacing": "small",
+        "alignment": "middle",
+        "color_scheme": "default"
+      }
+    },
+    "1617291721c3d3e73d": {
+      "type": "background-video",
+      "blocks": {
+        "f4f40ab9-fae9-4678-a2c6-87b948341ae0": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "CHANTILLY SWIMWEAR"
+          }
+        },
+        "b9c3b2b8-6b3d-4a55-8343-a6742af1b4f3": {
+          "type": "heading",
+          "settings": {
+            "title": "Escape the Everyday",
+            "heading_max_width": 15,
+            "title_size": 48,
+            "title_size_mobile": 34,
+            "use_h1": false
+          }
+        },
+        "3080b845-314c-4722-80d2-bc73640e8ed6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Swimwear that fits. Cute, chic & supportive DD+, bra-sized, longer-length & curve styles for when we can escape to the sun</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "f4f40ab9-fae9-4678-a2c6-87b948341ae0",
+        "b9c3b2b8-6b3d-4a55-8343-a6742af1b4f3",
+        "3080b845-314c-4722-80d2-bc73640e8ed6"
+      ],
+      "disabled": true,
+      "settings": {
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "text_alignment": "bottom left",
+        "height_desktop": 880,
+        "height_mobile": 520,
+        "full_width": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "1480591889144": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Trending Styles",
+        "collection": "all",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "color_scheme": "default",
+        "show_view_all": false,
+        "full_width": true
+      }
+    },
+    "image_with_text_overlay_jBcXaU": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "name": "Image with text overlay",
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 720,
+        "height_mobile": 500,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_V8xJDU": {
+      "type": "rich-text",
+      "blocks": {
+        "icon_YbVXgV": {
+          "type": "icon",
+          "settings": {
+            "icon": "beach",
+            "icon_color": "#bf570a"
+          }
+        },
+        "heading_PKfRcY": {
+          "type": "heading",
+          "settings": {
+            "title": "The Salty Bikini Club",
+            "use_h1": false
+          }
+        },
+        "text_MG3ajJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Follow us @instagram</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "icon_YbVXgV",
+        "heading_PKfRcY",
+        "text_MG3ajJ"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "gallery_3HQxcH": {
+      "type": "gallery",
+      "blocks": {
+        "media_AJTgLg": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_gQphjR": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_rDGWHW": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_p8ipUk": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_xzcx8c": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "media_AJTgLg",
+        "media_gQphjR",
+        "media_rDGWHW",
+        "media_p8ipUk",
+        "media_xzcx8c"
+      ],
+      "disabled": true,
+      "name": "Gallery",
+      "settings": {
+        "grid_desktop": 4,
+        "grid_mobile": "2",
+        "height": "fixed",
+        "desktop_image_height": 360,
+        "mobile_image_height": 200,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": false,
+        "enable_row_spacing": true,
+        "full_width": false,
+        "color_scheme": "default",
+        "enable_carousel": false,
+        "overlay_style": "no_background",
+        "overlay_padding": "standard",
+        "button_style": "primary"
+      }
+    },
+    "50830f37-1ae2-4f43-8f92-52e9c5c1d736": {
+      "type": "shop-the-look",
+      "blocks": {
+        "subheading_BD4pmV": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "make a splash"
+          }
+        },
+        "template--20584145715223__50830f37-1ae2-4f43-8f92-52e9c5c1d736-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Bikini time is here!",
+            "heading_max_width": 10,
+            "title_size": 48,
+            "title_size_mobile": 34,
+            "use_h1": false
+          }
+        },
+        "template--20584145715223__50830f37-1ae2-4f43-8f92-52e9c5c1d736-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This seasons must-have bathing suits</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_BD4pmV",
+        "template--20584145715223__50830f37-1ae2-4f43-8f92-52e9c5c1d736-heading-1",
+        "template--20584145715223__50830f37-1ae2-4f43-8f92-52e9c5c1d736-text-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "video_external": "",
+        "video_description": "",
+        "height": "fixed",
+        "height_desktop": 800,
+        "height_mobile": 400,
+        "product_list": [],
+        "products_alignment": "bottom right",
+        "product_card_layout": "portrait",
+        "show_swatches": true,
+        "full_width": true,
+        "text_alignment": "top left",
+        "mobile_overlay_over": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "1521034575223": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_pphBPq": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Beach Ready"
+          }
+        },
+        "1cf41ea7-69dd-443c-b2fd-00932a1c34a4": {
+          "type": "heading",
+          "settings": {
+            "title": "Swimsuit Update",
+            "use_h1": false
+          }
+        },
+        "c16e1af7-d56e-4907-b7a1-f074ee3e61d9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether you're looking for a classic one-piece, a dazzling two-piece bikini or a luxe cover-up that will go from the sand to the city - you'll be ready to soak up the sunshine in no time.</p>",
+            "enlarge_text": false
+          }
+        },
+        "b8d8eb99-2e6d-4e98-982d-dc8102682d22": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop collections",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_pphBPq",
+        "1cf41ea7-69dd-443c-b2fd-00932a1c34a4",
+        "c16e1af7-d56e-4907-b7a1-f074ee3e61d9",
+        "b8d8eb99-2e6d-4e98-982d-dc8102682d22"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_width": 640,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default"
+      }
+    },
+    "1521035976582": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_7J7zGM": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Our Promise"
+          }
+        },
+        "f4a77286-9c84-4267-8f19-f85ecc36d737": {
+          "type": "heading",
+          "settings": {
+            "title": "Better for the planet",
+            "use_h1": false
+          }
+        },
+        "e06fe14d-def8-4f6f-8a64-15e5c65c6ded": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Committed to sustainability from the ground up. From recycled packaging, fibers, and even earth-inspired prints. Because we think swimwear should help clean up our waters, not pollute them.</p>",
+            "enlarge_text": false
+          }
+        },
+        "2c12f66d-7be9-4644-a439-8632ab0a1c35": {
+          "type": "button",
+          "settings": {
+            "button_label": "Our Story",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_7J7zGM",
+        "f4a77286-9c84-4267-8f19-f85ecc36d737",
+        "e06fe14d-def8-4f6f-8a64-15e5c65c6ded",
+        "2c12f66d-7be9-4644-a439-8632ab0a1c35"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_overlay_kU6UU7": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_H9x7RG": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Limited time only"
+          }
+        },
+        "heading_Jqbrz4": {
+          "type": "heading",
+          "settings": {
+            "title": "Summer Sale",
+            "heading_max_width": 8,
+            "title_size": 60,
+            "title_size_mobile": 34,
+            "use_h1": false
+          }
+        },
+        "countdown_gBFdde": {
+          "type": "countdown",
+          "settings": {
+            "end_date": "",
+            "end_time": "",
+            "end_text": "",
+            "hide_on_end": false,
+            "number_size": 34,
+            "number_font": "heading",
+            "divider_type": "colon",
+            "show_timer_labels": true
+          }
+        },
+        "button_34gdhT": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHop Now",
+            "button_link": "",
+            "button_style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_H9x7RG",
+        "heading_Jqbrz4",
+        "countdown_gBFdde",
+        "button_34gdhT"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 760,
+        "height_mobile": 520,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "9a2b5d28-d921-46f4-9eeb-fe87535b6228": {
+      "type": "hotspots",
+      "blocks": {
+        "template--20584145715223__9a2b5d28-d921-46f4-9eeb-fe87535b6228-hotspot-2": {
+          "type": "hotspot",
+          "settings": {
+            "hotspot_x": 48,
+            "hotspot_y": 24,
+            "hotspot_x_mobile": 48,
+            "hotspot_y_mobile": 20,
+            "heading": "Heavy Rotation",
+            "text": "<p>Wear a different bikini everyday to make your suits last and keep your style fresh!</p>",
+            "icon": "beach",
+            "icon_width": 40
+          }
+        },
+        "template--20584145715223__9a2b5d28-d921-46f4-9eeb-fe87535b6228-hotspot-1": {
+          "type": "hotspot",
+          "settings": {
+            "hotspot_x": 34,
+            "hotspot_y": 52,
+            "hotspot_x_mobile": 36,
+            "hotspot_y_mobile": 58,
+            "heading": "Handwash Only",
+            "text": "<p>Always use cold water, and soap that is good for your fabrics and the environment.</p>",
+            "icon": "washing",
+            "icon_width": 40
+          }
+        },
+        "template--20584145715223__9a2b5d28-d921-46f4-9eeb-fe87535b6228-hotspot-3": {
+          "type": "hotspot",
+          "settings": {
+            "hotspot_x": 68,
+            "hotspot_y": 68,
+            "hotspot_x_mobile": 68,
+            "hotspot_y_mobile": 48,
+            "heading": "We only do 'slow' Fashion...",
+            "text": "<p>Quality swimwear you'll wear over and over again. Better for the environment, and you.</p>",
+            "icon": "heart",
+            "icon_width": 40
+          }
+        }
+      },
+      "block_order": [
+        "template--20584145715223__9a2b5d28-d921-46f4-9eeb-fe87535b6228-hotspot-2",
+        "template--20584145715223__9a2b5d28-d921-46f4-9eeb-fe87535b6228-hotspot-1",
+        "template--20584145715223__9a2b5d28-d921-46f4-9eeb-fe87535b6228-hotspot-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "hotspot_color": "#ffffff",
+        "button_content": "plus",
+        "outer_circle": "pulse",
+        "full_width": true,
+        "text_alignment": "top left",
+        "overlay_style": "shadow",
+        "subheading": "we are chantilly",
+        "title": "The best for women, by women.",
+        "use_h1": false,
+        "heading_max_width": 10,
+        "text": "<p>We feature: Supportive bra sized swim separates in sizes D Cup to H Cup. Flattering one pieces. Dare to bare ultra cheeky cuts. Sustainable and eco-conscious suits. Bold prints, fresh colors, and luxe textures.</p>",
+        "button_1_label": "Shop Collections",
+        "button_1_link": "",
+        "button_1_style": "secondary",
+        "button_2_label": "",
+        "button_2_link": "",
+        "button_2_style": "primary"
+      }
+    },
+    "1617292342c63ff855": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_iHywL9": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_7QybdK": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "1617292342c63ff855-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "title": "Summer shop",
+            "text": "<p><strong>Fresh styles. Fresh colors.</strong><br/>The countdown for summer has started.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "1617292342c63ff855-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "title": "The dream bikini",
+            "text": "<p><strong>Find your dazzling two-piece bikini.</strong><br/>From only $60.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "b1086ec6-bafc-4093-9ed5-2e8e87ac77ac": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "title": "Gift Cards",
+            "text": "<p><strong>Give the gift of Swimwear!</strong><br/>from $10-$250.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_iHywL9",
+        "text_block_7QybdK",
+        "1617292342c63ff855-1",
+        "1617292342c63ff855-0",
+        "b1086ec6-bafc-4093-9ed5-2e8e87ac77ac"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "media_aspect_ratio": "0.8",
+        "media_width": 700,
+        "text_alignment": "left",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    },
+    "1478606404805": {
+      "type": "featured-blog",
+      "settings": {
+        "title": "Resources from the Blog",
+        "blog": "blog",
+        "post_limit": 3,
+        "show_author": false,
+        "show_date": false,
+        "show_excerpts": true,
+        "crop_ratio": "",
+        "color_scheme": "default"
+      }
+    }
+  },
+  "order": [
+    "slideshow_yFaybj",
+    "16117511238528a364",
+    "custom_text_blocks_xzLtgT",
+    "rich_text_miGXW8",
+    "1619015739944f86f6",
+    "custom_gallery_NTXeGw",
+    "rich_text_GbNgfW",
+    "key_features_XcYhWj",
+    "find_your_setup_PtayM4",
+    "collapsible_tabs_9nL4LJ",
+    "1617293273c37b524b",
+    "custom_content_pkGWkD",
+    "1617291721c3d3e73d",
+    "1480591889144",
+    "image_with_text_overlay_jBcXaU",
+    "rich_text_V8xJDU",
+    "gallery_3HQxcH",
+    "50830f37-1ae2-4f43-8f92-52e9c5c1d736",
+    "1521034575223",
+    "1521035976582",
+    "image_with_text_overlay_kU6UU7",
+    "9a2b5d28-d921-46f4-9eeb-fe87535b6228",
+    "1617292342c63ff855",
+    "1478606404805"
+  ]
+}
