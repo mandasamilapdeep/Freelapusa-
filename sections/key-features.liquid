@@ -1,31 +1,31 @@
 {%- liquid
   if section.settings.media_aspect_ratio == 's'
-  assign custom_media_aspect_ratio = 0
-  for block in section.blocks
-    assign image = null
-    if block.settings.image
-      assign image = block.settings.image
-    elsif block.settings.video_shopify
-      assign image = block.settings.video_shopify.preview_image
-    endif
-    if image and image.aspect_ratio > custom_media_aspect_ratio
-      assign custom_media_aspect_ratio = image.aspect_ratio
-    endif
-  endfor
+    assign custom_media_aspect_ratio = 0
+    for block in section.blocks
+      assign image = null
+      if block.settings.image
+        assign image = block.settings.image
+      elsif block.settings.video_shopify
+        assign image = block.settings.video_shopify.preview_image
+      endif
+      if image and image.aspect_ratio > custom_media_aspect_ratio
+        assign custom_media_aspect_ratio = image.aspect_ratio
+      endif
+    endfor
 
   elsif section.settings.media_aspect_ratio == 't'
-  assign custom_media_aspect_ratio = 9999999
-  for block in section.blocks
-    assign image = null
-    if block.settings.image
-      assign image = block.settings.image
-    elsif block.settings.video_shopify
-      assign image = block.settings.video_shopify.preview_image
-    endif
-    if image and image.aspect_ratio < custom_media_aspect_ratio
-      assign custom_media_aspect_ratio = image.aspect_ratio
-    endif
-  endfor
+    assign custom_media_aspect_ratio = 9999999
+    for block in section.blocks
+      assign image = null
+      if block.settings.image
+        assign image = block.settings.image
+      elsif block.settings.video_shopify
+        assign image = block.settings.video_shopify.preview_image
+      endif
+      if image and image.aspect_ratio < custom_media_aspect_ratio
+        assign custom_media_aspect_ratio = image.aspect_ratio
+      endif
+    endfor
 
   else
     assign custom_media_aspect_ratio = section.settings.media_aspect_ratio | plus: 0
@@ -76,10 +76,11 @@
 {% endstyle %}
 
 <scrolling-image-list
-    id="{{ section.id }}"
-    data-current-index="1"
-    class="scrolling-image-list block use-color-scheme fully-padded-row--{{ section.settings.height }}"
-    style="--image-width: {{ section.settings.image_max_width }}px">
+  id="{{ section.id }}"
+  data-current-index="1"
+  class="scrolling-image-list block use-color-scheme fully-padded-row--{{ section.settings.height }}"
+  style="--image-width: {{ section.settings.image_max_width }}px"
+>
   {% for block in section.blocks %}
     <div class="scrolling-image-list__background" data-index="{{ forloop.index }}"></div>
   {% endfor %}
@@ -87,25 +88,46 @@
     <div class="flexible-layout{% if section.blocks.size == 1 %} valign-middle{% endif %}">
       <div class="column column--half {% if section.settings.image_position == 'right' %}column--order-push-desktop{% endif %}">
         <carousel-slider class="carousel block" data-dispatch-events="true">
-          <div class="slider slider--no-scrollbar fade-in-up" {%- render 'animation-attrs', attrs: 'data-cc-animate data-cc-animate-delay="0.1s"' -%}>
+          <div
+            class="slider slider--no-scrollbar fade-in-up"
+            {%- render 'animation-attrs', attrs: 'data-cc-animate data-cc-animate-delay="0.1s"' -%}
+          >
             <div class="slider__grid md:block">
               {% for block in section.blocks %}
                 <div class="slider__item flex-none basis-full" {{ block.shopify_attributes }}>
                   <div class="scrolling-image-list__image" data-index="{{ forloop.index }}" tabindex="0">
                     {%- if block.settings.video_shopify != blank -%}
-                      {%- assign placeholder_image = block.settings.image | default: section.settings.video_shopify.preview_image -%}
+                      {%- assign placeholder_image = block.settings.image
+                        | default: section.settings.video_shopify.preview_image
+                      -%}
                       <div class="video-section">
-                        <div class="height--adapt" {% if custom_media_aspect_ratio %}style="--aspect-ratio: {{ custom_media_aspect_ratio }}"{% endif %}>
+                        <div
+                          class="height--adapt"
+                          {% if custom_media_aspect_ratio %}
+                            style="--aspect-ratio: {{ custom_media_aspect_ratio }}"
+                          {% endif %}
+                        >
                           <div class="height__image">
                             <deferred-media>
                               <template>
                                 <video-component
-                                    class="has-video"
-                                    data-video-id="{{ section.id }}-{{ block.id }}"
-                                    data-autoplay="true"
-                                    data-background="false"
-                                    data-natural-width= "true">
-                                  {{ block.settings.video_shopify | video_tag: playsinline: true, controls: false, autoplay: true, muted: true, loop: true, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
+                                  class="has-video"
+                                  data-video-id="{{ section.id }}-{{ block.id }}"
+                                  data-autoplay="true"
+                                  data-background="false"
+                                  data-natural-width="true"
+                                >
+                                  {{
+                                    block.settings.video_shopify
+                                    | video_tag:
+                                      playsinline: true,
+                                      controls: false,
+                                      autoplay: true,
+                                      muted: true,
+                                      loop: true,
+                                      poster: ''
+                                    | replace: '<img ', '<img loading="lazy" hidden '
+                                  }}
                                 </video-component>
                               </template>
                             </deferred-media>
@@ -119,22 +141,34 @@
                       </div>
 
                     {%- elsif block.settings.image != blank -%}
-                      {%- render 'image' with block.settings.image, size_cols_desktop: 2, custom_aspect_ratio: custom_media_aspect_ratio -%}
+                      {%- render 'image' with block.settings.image,
+                        size_cols_desktop: 2,
+                        custom_aspect_ratio: custom_media_aspect_ratio
+                      -%}
 
                     {%- else -%}
                       {%- liquid
                         assign placeholder_svg_count = placeholder_svg_count | default: -1 | plus: 1 | modulo: 6
                         assign placeholder_svg = placeholder_svg_count | plus: 1 | prepend: 'collection-'
                       -%}
-                      <div class="placeholder-image">{{ placeholder_svg | placeholder_svg_tag: 'placeholder-svg' }}</div>
+                      <div class="placeholder-image">
+                        {{ placeholder_svg | placeholder_svg_tag: 'placeholder-svg' }}
+                      </div>
                     {%- endif -%}
 
-                    <div class="mobile-only fully-spaced-row scrolling-image-list__content scrolling-image-list__content--mobile
-                                {%- if block.settings.show_icon %} scrolling-image-list__content--with-icon
-                                  {%- if block.settings.show_segments and section.settings.segment_position == 'over-text' %} scrolling-image-list__content--icon-beside-rating{% endif %}
-                                {%- endif %}" data-index="{{ forloop.index }}">
+                    <div
+                      class="
+                        mobile-only fully-spaced-row scrolling-image-list__content scrolling-image-list__content--mobile
+                        {%- if block.settings.show_icon %} scrolling-image-list__content--with-icon
+                          {%- if block.settings.show_segments and section.settings.segment_position == 'over-text' %} scrolling-image-list__content--icon-beside-rating{% endif %}
+                        {%- endif %}
+                      "
+                      data-index="{{ forloop.index }}"
+                    >
                       {%- if section.settings.heading != blank -%}
-                        <div class="subheading spaced-row" role="heading" aria-level="2">{{ section.settings.heading }}</div>
+                        <div class="subheading spaced-row" role="heading" aria-level="2">
+                          {{ section.settings.heading }}
+                        </div>
                       {%- endif -%}
 
                       {%- if block.settings.show_icon -%}
@@ -197,17 +231,29 @@
         </carousel-slider>
       </div>
 
-      <div class="column column--half desktop-only scrolling-image-list__content-column" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+      <div
+        class="column column--half desktop-only scrolling-image-list__content-column"
+        {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}
+      >
         <div class="scrolling-image-list__content-area">
           <div class="feature-text-paired">
-            
             {%- if section.settings.heading != blank -%}
-              <div class="subheading spaced-row{% if all_icons %} scrolling-image-list__subheading-with-icon{% endif %}" role="heading" aria-level="2">{{ section.settings.heading }}</div>
+              <div
+                class="subheading spaced-row{% if all_icons %} scrolling-image-list__subheading-with-icon{% endif %}"
+                role="heading"
+                aria-level="2"
+              >
+                {{ section.settings.heading }}
+              </div>
             {%- endif -%}
 
             <div class="scrolling-image-list__content-list">
               {% for block in section.blocks %}
-                <div class="spaced-row scrolling-image-list__content{% if block.settings.show_icon %} scrolling-image-list__content--with-icon{% if block.settings.show_segments and section.settings.segment_position == 'over-text' %} scrolling-image-list__content--icon-beside-rating{% endif %}{% endif %}" data-index="{{ forloop.index }}" tabindex="0">
+                <div
+                  class="spaced-row scrolling-image-list__content{% if block.settings.show_icon %} scrolling-image-list__content--with-icon{% if block.settings.show_segments and section.settings.segment_position == 'over-text' %} scrolling-image-list__content--icon-beside-rating{% endif %}{% endif %}"
+                  data-index="{{ forloop.index }}"
+                  tabindex="0"
+                >
                   <span class="active_segment_custom">{{ block.settings.active_segment }}</span>
                   {%- if block.settings.show_icon -%}
                     {%- if block.settings.icon_image == blank -%}
@@ -278,15 +324,12 @@
   </div>
 </scrolling-image-list>
 
-
 {% schema %}
 {
   "name": "Key features",
   "class": "section-key-features",
   "disabled_on": {
-    "groups": [
-      "aside"
-    ]
+    "groups": ["aside"]
   },
   "settings": [
     {
@@ -676,8 +719,7 @@
     {
       "name": "Key features",
       "category": "Storytelling",
-      "settings": {
-      },
+      "settings": {},
       "blocks": [
         {
           "type": "feature",

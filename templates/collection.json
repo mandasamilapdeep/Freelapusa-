@@ -80,7 +80,10 @@
     "what_can_you_emfEhr": {
       "type": "what_can_you",
       "name": "What can you",
-      "settings": {}
+      "settings": {
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
     },
     "custom_gallery_Vhb9LJ": {
       "type": "custom_gallery",
@@ -212,87 +215,19 @@
         "color_scheme": "default"
       }
     },
-    "key_features_wBKKwN": {
-      "type": "key-features",
-      "blocks": {
-        "feature_JgDbFV": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/Mask_group_66ed267a-8a1a-4627-96fe-b5a5304c549d.png",
-            "bg_color": "#fff9d5",
-            "bg_gradient": "",
-            "text_color": "#000000",
-            "heading": "Place start, split, or finishtransmitters",
-            "text": "<p>Set timing points for acceleration, flying sprints, splits,or repeat reps.</p>",
-            "show_segments": true,
-            "segments": 3,
-            "active_segment": "1",
-            "fill_segments": false,
-            "show_labels": true,
-            "label_left": "",
-            "label_middle": "",
-            "label_right": "",
-            "show_icon": false,
-            "icon": "star"
-          }
-        },
-        "feature_6bqgyP": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/image_42.png",
-            "bg_color": "#fff9d5",
-            "bg_gradient": "",
-            "text_color": "#000000",
-            "heading": "Athletes wear the timing chip",
-            "text": "<p>The chip identifies the athlete and records timing events through the session.</p>",
-            "show_segments": true,
-            "segments": 3,
-            "active_segment": "2",
-            "fill_segments": false,
-            "show_labels": true,
-            "label_left": "",
-            "label_middle": "",
-            "label_right": "",
-            "show_icon": false,
-            "icon": "star"
-          }
-        },
-        "feature_6anbM4": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/image_43.jpg",
-            "bg_color": "#fff9d5",
-            "bg_gradient": "",
-            "text_color": "#000000",
-            "heading": "Results flow into MyFreelap",
-            "text": "<p>Coaches and athletes can review times after each rep and compare progress.</p>",
-            "show_segments": true,
-            "segments": 3,
-            "active_segment": "3",
-            "fill_segments": false,
-            "show_labels": true,
-            "label_left": "",
-            "label_middle": "",
-            "label_right": "",
-            "show_icon": false,
-            "icon": "star"
-          }
-        }
-      },
-      "block_order": [
-        "feature_JgDbFV",
-        "feature_6bqgyP",
-        "feature_6anbM4"
-      ],
-      "disabled": true,
-      "name": "Key features",
+    "collection_key_features_VAbKgK": {
+      "type": "collection-key-features",
+      "name": "Collection key features",
       "settings": {
-        "height": "small",
-        "heading": "",
+        "height": "medium",
+        "bg_color": "#fff9d5",
+        "heading": "hhhhh",
         "image_max_width": 650,
         "media_aspect_ratio": "t",
         "image_position": "left",
-        "segment_position": "under-title"
+        "segment_position": "under-title",
+        "padding_top": 40,
+        "padding_bottom": 0
       }
     },
     "collapsible_tabs_qqP9LR": {
@@ -348,6 +283,23 @@
         "open_tab": false,
         "enable_faq_schema": false
       }
+    },
+    "collection_collapsible_tabs_W7xYzR": {
+      "type": "collection-collapsible-tabs",
+      "name": "Collection collapsible tabs",
+      "settings": {
+        "title": "{{ collection.metafields.custom.collection_collapsible_tabs_title.value }}",
+        "open_tab": false,
+        "enable_faq_schema": true
+      }
+    },
+    "choose_your_pHmiaG": {
+      "type": "choose_your",
+      "name": "Choose your",
+      "settings": {
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
     }
   },
   "order": [
@@ -355,8 +307,10 @@
     "what_can_you_emfEhr",
     "custom_gallery_Vhb9LJ",
     "main",
+    "choose_your_pHmiaG",
     "rich_text_9XytfM",
-    "key_features_wBKKwN",
-    "collapsible_tabs_qqP9LR"
+    "collection_key_features_VAbKgK",
+    "collapsible_tabs_qqP9LR",
+    "collection_collapsible_tabs_W7xYzR"
   ]
 }

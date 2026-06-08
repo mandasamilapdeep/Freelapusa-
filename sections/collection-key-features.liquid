@@ -1,0 +1,306 @@
+{% if collection.metafields.custom.collection_key_features != blank %}
+  {%- liquid
+    if section.settings.media_aspect_ratio == 's'
+      assign custom_media_aspect_ratio = 0
+
+      for key_feature in collection.metafields.custom.collection_key_features.value
+        assign image = key_feature.image.value
+
+        if image and image.aspect_ratio > custom_media_aspect_ratio
+          assign custom_media_aspect_ratio = image.aspect_ratio
+        endif
+      endfor
+
+    elsif section.settings.media_aspect_ratio == 't'
+      assign custom_media_aspect_ratio = 9999999
+
+      for key_feature in collection.metafields.custom.collection_key_features.value
+        assign image = key_feature.image.value
+
+        if image and image.aspect_ratio < custom_media_aspect_ratio
+          assign custom_media_aspect_ratio = image.aspect_ratio
+        endif
+      endfor
+
+    else
+      assign custom_media_aspect_ratio = section.settings.media_aspect_ratio | plus: 0
+    endif
+  -%}
+  <link rel="stylesheet" href="{{ 'feature-rating.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
+  <link rel="stylesheet" href="{{ 'scrolling-image-list.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
+  <script src="{{ 'scrolling-image-list.js' | asset_url }}" defer></script>
+
+  {% style %}
+    #collection-key-features-{{section.id}} {
+      background-color: {{ section.settings.bg_color }};
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+    {% for block in section.blocks %}
+      #{{ section.id }}[data-current-index="{{ forloop.index }}"] {
+        --text-color: {{ block.settings.text_color.rgb }};
+        --heading-color: {{ block.settings.text_color.rgb }};
+        --link-color: {{ block.settings.text_color.rgb }};
+      }
+
+      #{{ section.id }} .scrolling-image-list__background[data-index="{{ forloop.index }}"] {
+        background: {{ block.settings.bg_gradient | default: block.settings.bg_color }};
+      }
+
+
+
+
+    {% endfor %}
+    {% for key_feature in collection.metafields.custom.collection_key_features.value %}
+      #{{ section.id }}[data-current-index="{{ forloop.index }}"] [data-index="{{ forloop.index }}"] {
+        --content-fade-delay: 200ms;
+        --content-visibility: visible;
+        opacity: 1;
+      }
+      #{{ section.id }}[data-current-index="{{ forloop.index }}"] .scrolling-image-list-dots__dot[data-index="{{ forloop.index }}"] {
+        background: currentColor;
+      }
+    {% endfor %}
+  {% endstyle %}
+  <div id="collection-key-features-{{section.id}}" class="collection-key_features_main">
+    {% if collection.metafields.custom.collection_key_features_title != blank %}
+      <div class="container collection-key_features_title_box container--not-mobile">
+        <h2 class="h1 built_titling">
+          {{ collection.metafields.custom.collection_key_features_title }}
+        </h2>
+      </div>
+    {%- endif -%}
+    <scrolling-image-list
+      id="{{ section.id }}"
+      data-current-index="1"
+      class="scrolling-image-list block use-color-scheme fully-padded-row--{{ section.settings.height }}"
+      style="--image-width: {{ section.settings.image_max_width }}px"
+    >
+      {% for key_feature in collection.metafields.custom.collection_key_features.value %}
+        <div class="scrolling-image-list__background" data-index="{{ forloop.index }}"></div>
+      {% endfor %}
+      <div class="container container--not-mobile">
+        <div class="flexible-layout valign-middle">
+          <div class="column column--half {% if section.settings.image_position == 'right' %}column--order-push-desktop{% endif %}">
+            <carousel-slider class="carousel block" data-dispatch-events="true">
+              <div
+                class="slider slider--no-scrollbar fade-in-up"
+                {%- render 'animation-attrs', attrs: 'data-cc-animate data-cc-animate-delay="0.1s"' -%}
+              >
+                <div class="slider__grid md:block">
+                  {% for key_feature in collection.metafields.custom.collection_key_features.value %}
+                    <div class="slider__item flex-none basis-full" {{ block.shopify_attributes }}>
+                      <div class="scrolling-image-list__image" data-index="{{ forloop.index }}" tabindex="0">
+                        {%- render 'image' with key_feature.image.value,
+                          size_cols_desktop: 2,
+                          custom_aspect_ratio: custom_media_aspect_ratio
+                        -%}
+
+                        <div
+                          class="mobile-only fully-spaced-row scrolling-image-list__content scrolling-image-list__content--mobile"
+                          data-index="{{ forloop.index }}"
+                        >
+                          <h3 class="h1 built_titling">{{ key_feature.title }}</h3>
+
+                          <div class="rte">{{ key_feature.text | metafield_tag }}</div>
+                        </div>
+                      </div>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+
+              <div class="scrolling-image-list-dots flex justify-center mobile-only js" role="presentation">
+                {% for key_feature in collection.metafields.custom.collection_key_features.value %}
+                  <div class="scrolling-image-list-dots__dot" data-index="{{ forloop.index }}"></div>
+                {%- endfor -%}
+              </div>
+            </carousel-slider>
+          </div>
+
+          <div
+            class="column column--half desktop-only scrolling-image-list__content-column cc-animate-in"
+            {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}
+          >
+            <div class="scrolling-image-list__content-area">
+              <div class="feature-text-paired">
+                <div class="scrolling-image-list__content-list">
+                  {% for key_feature in collection.metafields.custom.collection_key_features.value %}
+                    <div
+                      class="spaced-row scrolling-image-list__content"
+                      data-index="{{ forloop.index }}"
+                      tabindex="0"
+                    >
+                      <span class="active_segment_custom">{{ forloop.index }}</span>
+                      <h3 class="h1 built_titling">{{ key_feature.title }}</h3>
+
+                      <div class="feature-rating-row">
+                        {% render 'feature-rating', segments: forloop.length, active_segment: forloop.index %}
+                      </div>
+
+                      {%- if key_feature.text != blank -%}
+                        <div class="rte">{{ key_feature.text | metafield_tag }}</div>
+                      {%- endif -%}
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </scrolling-image-list>
+  </div>
+{% endif %}
+{% schema %}
+{
+  "name": "Collection key features",
+  "class": "section-key-features",
+  "disabled_on": {
+    "groups": ["aside"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "height",
+      "label": "Section height",
+      "default": "medium",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#fff"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Key features"
+    },
+    {
+      "type": "range",
+      "id": "image_max_width",
+      "min": 340,
+      "max": 700,
+      "step": 10,
+      "unit": "px",
+      "label": "Image max width",
+      "default": 700
+    },
+    {
+      "type": "select",
+      "id": "media_aspect_ratio",
+      "label": "Media shape",
+      "default": "1",
+      "options": [
+        {
+          "value": "s",
+          "label": "Height of shortest media"
+        },
+        {
+          "value": "t",
+          "label": "Height of tallest media"
+        },
+        {
+          "value": "2",
+          "label": "Landscape (2x1)"
+        },
+        {
+          "value": "1.5",
+          "label": "Landscape (6x4)"
+        },
+        {
+          "value": "1.25",
+          "label": "Landscape (5x4)"
+        },
+        {
+          "value": "1",
+          "label": "Square (1x1)"
+        },
+        {
+          "value": "0.8",
+          "label": "Portrait (4x5)"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image alignment",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "segment_position",
+      "label": "Segments position",
+      "default": "over-text",
+      "options": [
+        {
+          "value": "over-text",
+          "label": "Over text"
+        },
+        {
+          "value": "under-text",
+          "label": "Under text"
+        },
+        {
+          "value": "under-title",
+          "label": "Under title"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 50
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection key features",
+      "category": "Storytelling",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

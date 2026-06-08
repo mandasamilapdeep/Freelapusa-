@@ -472,9 +472,26 @@ ul.slick-dots li.slick-active button {
     margin-top: 40px;
 }
 
+.container.collection-key_features_title_box {
+    text-align: center;
+}
+
+.container.collection-key_features_title_box h2 {
+    margin-bottom: 0;
+}
+
+.collection-key_features_main scrolling-image-list {
+    padding-top: 50px;
+}
+
 @media(min-width:768px) {
     main-navigation .navigation .navigation__tier-1>.navigation__item>.navigation__link {
         padding: 8px 4px;
+    }
+
+    .feature-text-paired {
+        margin-right: 10%;
+        margin-left: 10%;
     }
 }
 
