@@ -9,6 +9,14 @@
  */
 {
   "sections": {
+    "breadcrumbs_pdKkYm": {
+      "type": "breadcrumbs",
+      "name": "breadcrumbs",
+      "settings": {
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
+    },
     "collection_gallery_PMyBnC": {
       "type": "collection-gallery",
       "blocks": {
@@ -152,10 +160,10 @@
         "heading_image_height": "medium",
         "overlay_style": "shadow",
         "coll_desc_pos": "above",
-        "coll_num_per_page_int": 24,
+        "coll_num_per_page_int": 50,
         "grid": 4,
         "show_vendor": false,
-        "show_total": false,
+        "show_total": true,
         "enable_filtering": true,
         "collapse_tag_sidebar_by_default": false,
         "collapse_filters_method": "over-12",
@@ -165,7 +173,7 @@
         "auto_apply_hide_unavailable": false,
         "enable_sticky_filter": true,
         "show_sort": true,
-        "sort_show_featured": false,
+        "sort_show_featured": true,
         "sort_show_best": true,
         "sort_show_alpha": true,
         "sort_show_price": true,
@@ -179,6 +187,14 @@
         "rel_coll_gall_overlay_style": "shadow",
         "rel_coll_gall_text_alignment": "center center",
         "rel_coll_grid_mobile": "2"
+      }
+    },
+    "choose_your_pHmiaG": {
+      "type": "choose_your",
+      "name": "Choose your",
+      "settings": {
+        "padding_top": 50,
+        "padding_bottom": 50
       }
     },
     "rich_text_9XytfM": {
@@ -292,17 +308,10 @@
         "open_tab": false,
         "enable_faq_schema": true
       }
-    },
-    "choose_your_pHmiaG": {
-      "type": "choose_your",
-      "name": "Choose your",
-      "settings": {
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
     }
   },
   "order": [
+    "breadcrumbs_pdKkYm",
     "collection_gallery_PMyBnC",
     "what_can_you_emfEhr",
     "custom_gallery_Vhb9LJ",

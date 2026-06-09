@@ -1,20 +1,20 @@
 {%- comment -%}
-Parameters:
-  - product {Object} - Product object.
-  - no_quick_buy {Boolean} - If true, quick buy buttons are not shown (optional, default is false).
-  - no_quick_buy_markup {Boolean} - If true, quick buy button shows, but quick buy container does not (optional, default is false)
-  - custom_aspect_ratio {Number} - Aspect ratio to use for images (optional).
-  - compact {String} - Show compact version of this block (optional).
-  - card_layout {String} - May be 'landscape' or 'portrait' (optional, default is 'portrait').
-  - manual_loading {Boolean} - Whether to ensure all images need manually loading with JS (optional).
-  - prioritised_loading {Boolean} - Whether to render images immediately, not lazily (optional, default is false).
-  - icon_height {Number} - Custom icon height (optional, default is 24).
-  - grid {Number} - Desktop grid column count, used for image sizing (option, default is section.settings.grid)
+  Parameters:
+    - product {Object} - Product object.
+    - no_quick_buy {Boolean} - If true, quick buy buttons are not shown (optional, default is false).
+    - no_quick_buy_markup {Boolean} - If true, quick buy button shows, but quick buy container does not (optional, default is false)
+    - custom_aspect_ratio {Number} - Aspect ratio to use for images (optional).
+    - compact {String} - Show compact version of this block (optional).
+    - card_layout {String} - May be 'landscape' or 'portrait' (optional, default is 'portrait').
+    - manual_loading {Boolean} - Whether to ensure all images need manually loading with JS (optional).
+    - prioritised_loading {Boolean} - Whether to render images immediately, not lazily (optional, default is false).
+    - icon_height {Number} - Custom icon height (optional, default is 24).
+    - grid {Number} - Desktop grid column count, used for image sizing (option, default is section.settings.grid)
 
-  Usage:
-  {% render 'product-block',
-    product: product
-  %}
+    Usage:
+    {% render 'product-block',
+      product: product
+    %}
 {%- endcomment -%}
 {%- liquid
   if collection and settings.prod_thumb_url_within_coll and product.collections contains collection
@@ -74,8 +74,16 @@ Parameters:
   endif
 -%}
 
-<product-block class="product-block{% if compact %} product-block--compact{% endif %}{% if card_layout == 'landscape' %} product-block--landscape{% endif %}" data-product-id="{{ product.id }}">
-  <div class="block-inner"{% if animate %}{%- render 'animation-attrs', attrs: 'data-cc-animate', always: true -%}{% endif %}>
+<product-block
+  class="product-block{% if compact %} product-block--compact{% endif %}{% if card_layout == 'landscape' %} product-block--landscape{% endif %}"
+  data-product-id="{{ product.id }}"
+>
+  <div
+    class="block-inner"
+    {% if animate %}
+      {%- render 'animation-attrs', attrs: 'data-cc-animate', always: true -%}
+    {% endif %}
+  >
     <div class="block-inner-inner">
       {% if product.featured_media %}
         {%- liquid
@@ -94,12 +102,26 @@ Parameters:
           endif
         -%}
         <div class="image-cont {% if show_hover_image %}image-cont--with-secondary-image {% if aspect_ratios_same %}image-cont--same-aspect-ratio{% endif %}{% endif %}">
-          <a class="product-link{% if settings.quickbuy_style == 'whole' %}{% unless no_quick_buy %} quickbuy-toggle{% endunless %}{% endif %}" href="{{ product_url }}" aria-hidden="true" tabindex="-1">
+          <a
+            class="product-link{% if settings.quickbuy_style == 'whole' %}{% unless no_quick_buy %} quickbuy-toggle{% endunless %}{% endif %}"
+            href="{{ product_url }}"
+            aria-hidden="true"
+            tabindex="-1"
+          >
             <div class="image-label-wrap">
               <div>
                 {%- if show_hover_image -%}
-                  <div class="product-block__image product-block__image--primary{% if product.featured_media.id == product.media.first.id %}{% assign active_media_found = true %} product-block__image--active{% endif %}{% if product_images.last.id == product.featured_media.id %} product-block__image--show-on-hover{% endif %}" data-media-id="{{ product.media.first.id }}">
-                    {%- render 'image' with product.media.first.preview_image, loading: loading, size_cols_mobile: 2, size_cols_desktop: size_cols_desktop, custom_aspect_ratio: custom_aspect_ratio, custom_crop: custom_crop -%}
+                  <div
+                    class="product-block__image product-block__image--primary{% if product.featured_media.id == product.media.first.id %}{% assign active_media_found = true %} product-block__image--active{% endif %}{% if product_images.last.id == product.featured_media.id %} product-block__image--show-on-hover{% endif %}"
+                    data-media-id="{{ product.media.first.id }}"
+                  >
+                    {%- render 'image' with product.media.first.preview_image,
+                      loading: loading,
+                      size_cols_mobile: 2,
+                      size_cols_desktop: size_cols_desktop,
+                      custom_aspect_ratio: custom_aspect_ratio,
+                      custom_crop: custom_crop
+                    -%}
                   </div>
                   {%- for media in product_images offset: 1 -%}
                     {%- liquid
@@ -116,22 +138,40 @@ Parameters:
                         endif
                       endif
                     -%}
-                    <div class="product-block__image product-block__image--secondary {{ image_state_class }}"
-                        data-media-id="{{ media.id }}"
-                        data-image-index="{{ forloop.index }}">
-                      {%- render 'image' with media.preview_image, loading: hover_loading, size_cols_mobile: 2, size_cols_desktop: size_cols_desktop, custom_aspect_ratio: custom_aspect_ratio, custom_crop: custom_crop -%}
+                    <div
+                      class="product-block__image product-block__image--secondary {{ image_state_class }}"
+                      data-media-id="{{ media.id }}"
+                      data-image-index="{{ forloop.index }}"
+                    >
+                      {%- render 'image' with media.preview_image,
+                        loading: hover_loading,
+                        size_cols_mobile: 2,
+                        size_cols_desktop: size_cols_desktop,
+                        custom_aspect_ratio: custom_aspect_ratio,
+                        custom_crop: custom_crop
+                      -%}
                     </div>
                   {%- endfor -%}
                 {%- else -%}
-                  <div class="product-block__image product-block__image--primary product-block__image--active" data-media-id="{{ product.featured_media.id }}">
-                    {%- render 'image' with product.featured_media.preview_image, loading: loading, size_cols_mobile: 2, size_cols_desktop: size_cols_desktop, custom_aspect_ratio: custom_aspect_ratio, custom_crop: custom_crop -%}
+                  <div
+                    class="product-block__image product-block__image--primary product-block__image--active"
+                    data-media-id="{{ product.featured_media.id }}"
+                  >
+                    {%- render 'image' with product.featured_media.preview_image,
+                      loading: loading,
+                      size_cols_mobile: 2,
+                      size_cols_desktop: size_cols_desktop,
+                      custom_aspect_ratio: custom_aspect_ratio,
+                      custom_crop: custom_crop
+                    -%}
                   </div>
                 {%- endif -%}
               </div>
               {%- if show_hover_image -%}
                 {%- unless no_swiping -%}
                   <div class="product-block__image-dots" aria-hidden="true">
-                    <div class="product-block__image-dot product-block__image-dot--active"></div><div class="product-block__image-dot"></div>
+                    <div class="product-block__image-dot product-block__image-dot--active"></div>
+                    <div class="product-block__image-dot"></div>
                     {%- if product_images.size > 2 -%}
                       <div class="product-block__image-dot product-block__image-dot--more"></div>
                     {%- endif -%}
@@ -144,13 +184,29 @@ Parameters:
             </div>
           </a>
           {%- if show_hover_image -%}
-            <a class="image-page-button image-page-button--previous has-ltr-icon" href="#" aria-label="{{ 'general.slider.previous' | t | escape }}" tabindex="-1">{%- render 'icon-chevron-left', stroke_width: 1.3 -%}</a>
-            <a class="image-page-button image-page-button--next has-ltr-icon" href="#" aria-label="{{ 'general.slider.next' | t | escape }}" tabindex="-1">{%- render 'icon-chevron-right', stroke_width: 1.3 -%}</a>
+            <a
+              class="image-page-button image-page-button--previous has-ltr-icon"
+              href="#"
+              aria-label="{{ 'general.slider.previous' | t | escape }}"
+              tabindex="-1"
+            >
+              {%- render 'icon-chevron-left', stroke_width: 1.3 -%}
+            </a>
+            <a
+              class="image-page-button image-page-button--next has-ltr-icon"
+              href="#"
+              aria-label="{{ 'general.slider.next' | t | escape }}"
+              tabindex="-1"
+            >
+              {%- render 'icon-chevron-right', stroke_width: 1.3 -%}
+            </a>
           {%- endif -%}
 
           {%- if settings.quickbuy_style == 'button' -%}
             {%- unless no_quick_buy -%}
-              <a class="btn btn--secondary quickbuy-toggle" href="{{ product_url }}">{{ 'products.product.quick_buy' | t }}</a>
+              <a class="btn btn--secondary quickbuy-toggle" href="{{ product_url }}">
+                {{- 'products.product.quick_buy' | t -}}
+              </a>
             {%- endunless -%}
           {%- endif -%}
         </div>
@@ -160,7 +216,9 @@ Parameters:
 
           {%- if settings.quickbuy_style == 'button' -%}
             {%- unless no_quick_buy -%}
-              <a class="btn btn--secondary quickbuy-toggle" href="{{ product_url }}">{{ 'products.product.quick_buy' | t }}</a>
+              <a class="btn btn--secondary quickbuy-toggle" href="{{ product_url }}">
+                {{- 'products.product.quick_buy' | t -}}
+              </a>
             {%- endunless -%}
           {%- endif -%}
         </div>
@@ -169,12 +227,15 @@ Parameters:
       <div class="product-block__detail align-ltr-{{ settings.prod_thumb_text_align }}">
         <div class="inner">
           <div class="innerer">
-            <a class="product-link{% if settings.quickbuy_style == 'whole' %}{% unless no_quick_buy %} quickbuy-toggle{% endunless %}{% endif %}" href="{{ product_url }}">
+            <a
+              class="product-link{% if settings.quickbuy_style == 'whole' %}{% unless no_quick_buy %} quickbuy-toggle{% endunless %}{% endif %}"
+              href="{{ product_url }}"
+            >
               {%- if show_vendor -%}
                 <div class="vendor">{{ product.vendor | escape }}</div>
               {%- endif -%}
 
-              <div class="product-block__title">{{ product.title | escape }}</div>
+              <div class="product-block__title built_titling">{{ product.title | escape }}</div>
 
               {%- if settings.prod_thumb_show_subtitle and product.metafields.descriptors.subtitle != blank -%}
                 <div class="product-block__subtitle">{{ product.metafields.descriptors.subtitle }}</div>
@@ -182,7 +243,12 @@ Parameters:
 
               {%- if show_price -%}
                 <div class="product-price product-price--block">
-                  {%- render 'price', product: product, current_variant: cheapest_variant, show_currency_code: settings.product_currency_code_enabled, show_labels: true -%}
+                  {%- render 'price',
+                    product: product,
+                    current_variant: cheapest_variant,
+                    show_currency_code: settings.product_currency_code_enabled,
+                    show_labels: true
+                  -%}
                 </div>
               {%- endif -%}
             </a>
@@ -330,7 +396,10 @@ Parameters:
               {%- endfor -%}
             {%- endif -%}
 
-            {%- if settings.enable_product_reviews_collection and product.metafields.reviews.rating_count != blank and compact == false -%}
+            {%- if settings.enable_product_reviews_collection
+              and product.metafields.reviews.rating_count != blank
+              and compact == false
+            -%}
               {%- assign rating_count = product.metafields.reviews.rating_count | plus: 0 -%}
               {%- if rating_count > 0 -%}
                 <div class="product-block__rating">
@@ -350,7 +419,9 @@ Parameters:
   {%- if settings.quickbuy_style != 'off' -%}
     {%- unless no_quick_buy_markup or no_quick_buy -%}
       <div class="quickbuy-container use-color-scheme use-color-scheme--{{ settings.quickbuy_color_scheme }} js-quickbuy">
-        <a href="#" class="close-detail" aria-label="{{ 'accessibility.close' | t }}" tabindex="-1" aria-hidden="true">{% render 'icon-close', stroke_width: 1 %}</a>
+        <a href="#" class="close-detail" aria-label="{{ 'accessibility.close' | t }}" tabindex="-1" aria-hidden="true">
+          {%- render 'icon-close', stroke_width: 1 -%}
+        </a>
         <div class="inner"></div>
       </div>
     {%- endunless -%}

@@ -15,34 +15,34 @@
 {%- endcomment -%}
 
 {%- liquid
-assign show_crumbs = true
-assign show_structured_data = true
-assign show_collection_listing_link = false
-assign breadcrumbs_title = 'general.breadcrumbs.title' | t
-assign home_title = 'general.breadcrumbs.home' | t
-assign other_templates = 'blog, cart, list-collections, page, search' | split: ', '
+  assign show_crumbs = true
+  assign show_structured_data = true
+  assign show_collection_listing_link = false
+  assign breadcrumbs_title = 'general.breadcrumbs.title' | t
+  assign home_title = 'general.breadcrumbs.home' | t
+  assign other_templates = 'blog, cart, list-collections, page, search' | split: ', '
 
-if template.name == 'blog' or template.name == 'page'
-  assign item_title = [template.name].title
-  assign item_url = [template.name].url
-elsif template.name == 'list-collections'
-  assign item_title = 'general.breadcrumbs.collections' | t
-  assign item_url = routes.collections_url
-elsif template.name == 'collection' or template.name == 'product'
-  assign collections_title = 'general.breadcrumbs.collections' | t
-elsif template.name == 'search'
-  assign item_title = 'general.search.title' | t
-  assign item_url = routes.search_url
-  assign show_structured_data = false
-elsif template.name == 'cart'
-  assign item_title = 'cart.general.title' | t
-  assign item_url = routes.cart_url
-  assign show_structured_data = false
-elsif template.directory == 'customers'
-  assign item_title = 'customer.account.title' | t
-  assign item_url = routes.account_url
-  assign show_structured_data = false
-endif
+  if template.name == 'blog' or template.name == 'page'
+    assign item_title = [template.name].title
+    assign item_url = [template.name].url
+  elsif template.name == 'list-collections'
+    assign item_title = 'general.breadcrumbs.collections' | t
+    assign item_url = routes.collections_url
+  elsif template.name == 'collection' or template.name == 'product'
+    assign collections_title = 'general.breadcrumbs.collections' | t
+  elsif template.name == 'search'
+    assign item_title = 'general.search.title' | t
+    assign item_url = routes.search_url
+    assign show_structured_data = false
+  elsif template.name == 'cart'
+    assign item_title = 'cart.general.title' | t
+    assign item_url = routes.cart_url
+    assign show_structured_data = false
+  elsif template.directory == 'customers'
+    assign item_title = 'customer.account.title' | t
+    assign item_url = routes.account_url
+    assign show_structured_data = false
+  endif
 -%}
 
 {%- if template.name == 'blog' and current_tags -%}
@@ -50,7 +50,10 @@ endif
 {%- endif -%}
 
 {%- unless divider -%}
-  {%- capture divider -%}<span class="icon">{% render 'icon-chevron-right' %}</span>{%- endcapture -%}
+  {%- capture divider -%}<span class="icon">
+    {% comment %} {% render 'icon-chevron-right' %} {% endcomment %}
+    /
+  </span>{%- endcapture -%}
 {%- endunless -%}
 
 {%- unless prev_icon -%}
