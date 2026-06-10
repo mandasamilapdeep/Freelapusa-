@@ -105,6 +105,57 @@
         "button_2_hover_border_color": "#ffde13"
       }
     },
+    "trust_section_LjUL74": {
+      "type": "trust-section",
+      "blocks": {
+        "content_ByDqL3": {
+          "type": "content",
+          "settings": {
+            "first_text": "Over",
+            "sub_title": "2,000",
+            "second_text": "sports teams"
+          }
+        },
+        "content_Fkk7LP": {
+          "type": "content",
+          "settings": {
+            "first_text": "and over",
+            "sub_title": "2 million",
+            "second_text": "athletes"
+          }
+        },
+        "content_ehDVDW": {
+          "type": "content",
+          "settings": {
+            "first_text": "playing over",
+            "sub_title": "50",
+            "second_text": "sports"
+          }
+        },
+        "content_T8Mdga": {
+          "type": "content",
+          "settings": {
+            "first_text": "playing over",
+            "sub_title": "130",
+            "second_text": "countries"
+          }
+        }
+      },
+      "block_order": [
+        "content_ByDqL3",
+        "content_Fkk7LP",
+        "content_ehDVDW",
+        "content_T8Mdga"
+      ],
+      "name": "Trust Section",
+      "settings": {
+        "title": "Trusted by",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "bg_color": "#fff9d5",
+        "text_color": "#000000"
+      }
+    },
     "16117511238528a364": {
       "type": "testimonials",
       "blocks": {
@@ -1475,6 +1526,7 @@
   },
   "order": [
     "slideshow_yFaybj",
+    "trust_section_LjUL74",
     "16117511238528a364",
     "custom_text_blocks_xzLtgT",
     "rich_text_miGXW8",

@@ -256,7 +256,7 @@ span.find_btn.btn {
 }
 
 .collapsible-tabs .disclosure {
-    padding: 0 22px;
+    padding: 12px 22px;
 }
 
 .collapsible-tabs .disclosure__title_inner {
@@ -648,6 +648,66 @@ ol.breadcrumbs-list {
     font-family: 'Built Titling';
 }
 
+.trust_section_inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.trust_section_inner .title_box {
+    width: 260px;
+    max-width: 100%;
+}
+
+.trust_section_inner .content_box {
+    width: calc(100% - 260px);
+    max-width: 100%;
+}
+
+.content_box_inner:not(.slick-initialized) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.content_box_inner .content_box_grid_item {
+    padding: 0 24px;
+    border-left: 1px solid;
+}
+
+.trust_section_inner .title_box h3 {
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.trust_section_inner .first_text,
+.trust_section_inner .second_text {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.trust_section_inner h4.sub_title {
+    font-size: 52px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.trust_section_inner button.slick-next.slick-arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.trust_section_inner button.slick-prev.slick-arrow {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
 @media(min-width:768px) {
     main-navigation .navigation .navigation__tier-1>.navigation__item>.navigation__link {
         padding: 8px 4px;
@@ -688,14 +748,46 @@ ol.breadcrumbs-list {
     }
 }
 
+@media(max-width:1550px) {
+    .trust_section_inner h4.sub_title {
+        font-size: 40px;
+    }
+}
+
 @media(max-width:1350px) {
     page-header .social {
         gap: 0;
         min-width: auto;
     }
+
+    .trust_section_inner h4.sub_title {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:1201px) {
+    .content_box_inner .content_box_grid_item {
+        border-left: none;
+        padding: 0 40px;
+    }
 }
 
 @media(max-width:768px) {
+    .content_box_inner .content_box_grid_item {
+        text-align: center;
+    }
+
+    .trust_section_inner .content_box {
+        width: 100%;
+    }
+
+    .trust_section_inner .title_box {
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
     .find_your_setup_main .left_side {
         min-height: auto;
         width: 100%;

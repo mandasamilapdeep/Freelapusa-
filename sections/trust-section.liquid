@@ -1,0 +1,135 @@
+{% style %}
+  .trust-section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px !important;
+    padding-bottom: {{ section.settings.padding_bottom }}px !important;
+    background-color: {{ section.settings.bg_color }};
+    color: {{ section.settings.text_color }};
+  }
+{% endstyle %}
+<div class="trust-section-{{ section.id }}">
+  <div class="container container--no-max">
+    <div class="trust_section_inner">
+      <div class="title_box">
+        <h3>{{ section.settings.title }}</h3>
+      </div>
+      <div class="content_box">
+        <div class="content_box_inner">
+          {% for block in section.blocks %}
+            <div class="content_box_grid">
+              <div class="content_box_grid_item">
+                <p class="first_text">{{ block.settings.first_text }}</p>
+                <h4 class="sub_title">{{ block.settings.sub_title }}</h4>
+                <p class="second_text">{{ block.settings.second_text }}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    $('.trust-section-{{ section.id }} .content_box_inner').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false,
+      infinite: false,
+      speed: 600,
+      prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-arrow-left"></i></button>',
+      nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right"></i></button>',
+      responsive: [
+        {
+          breakpoint: 1201,
+          settings: {
+            slidesToShow: 2,
+            arrows: true,
+          },
+        },
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 1,
+            arrows: true,
+          },
+        },
+      ],
+    });
+  });
+</script>
+{% schema %}
+{
+  "name": "Trust Section",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 50
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000"
+    }
+  ],
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "content",
+      "name": "Content",
+      "settings": [
+        {
+          "type": "text",
+          "id": "first_text",
+          "label": "First Text"
+        },
+        {
+          "type": "text",
+          "id": "sub_title",
+          "label": "Sub title"
+        },
+        {
+          "type": "text",
+          "id": "second_text",
+          "label": "Second Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trust Section",
+      "category": "Content"
+    }
+  ]
+}
+{% endschema %}
